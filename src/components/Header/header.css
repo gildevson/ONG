@@ -1,0 +1,117 @@
+/* 🟠 Estilos do menu principal */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FF7800; /* Laranja vibrante */
+  color: #fff;
+  padding: 0.8rem 0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+
+/* 📌 Container centralizado */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 🏷️ Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  z-index: 1100; /* Garante que a logo fique sempre acima do menu */
+}
+
+.logo-img {
+  height: 80px; /* Ajuste no tamanho */
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  position: relative;
+}
+
+/* 📌 Ícone do menu hambúrguer */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  z-index: 1101;
+}
+
+.menu-icon:hover {
+  transform: scale(1.1);
+}
+
+/* 🏷️ Links do menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* 🏷️ Estilização dos links */
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* 📌 MENU RESPONSIVO */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  /* 📌 Mantém a logo visível e impede sobreposição */
+  .navbar {
+    position: relative;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 90px; /* Move o menu para baixo da logo */
+    right: 0;
+    background-color: #FF7800;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 1rem;
+    
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  /* 📌 Quando o menu estiver aberto */
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    padding-top: 1.5rem;
+  }
+}

@@ -1,0 +1,26 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Para centralizar o conteúdo melhor */
+    text-align: center;
+    padding: 120px 20px; /* Ajuste no topo para compensar o menu fixo */
+    background-color: #f8f9fa; /* Um fundo suave para dar um destaque */
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
