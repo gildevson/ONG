@@ -1,6 +1,6 @@
 /* 🌍 Estilização do Footer */
 .footer {
-  background-color: #111; /* Cor escura */
+  background-color: #111;
   color: #fff;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
@@ -49,10 +49,11 @@
   color: #ff9c00;
 }
 
-/* 📌 Contatos e redes sociais */
+/* 📌 Ícones sociais */
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  align-items: center;
   margin-top: 10px;
 }
 
@@ -67,32 +68,31 @@
   color: #ff9c00;
 }
 
-/* 📌 Newsletter */
-.newsletter {
+/* 📌 Botão de Doação */
+.donate-button {
   display: flex;
-  gap: 5px;
-  margin-top: 10px;
-}
-
-.newsletter input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #ff9c00;
-  border-radius: 3px;
-  outline: none;
-}
-
-.newsletter button {
+  align-items: center;
+  justify-content: center;
   background-color: #ff9c00;
   color: white;
+  font-size: 16px;
+  font-weight: bold;
   border: none;
-  padding: 8px 12px;
+  padding: 10px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s;
+  text-decoration: none;
+  width: fit-content;
 }
 
-.newsletter button:hover {
+.donate-button svg {
+  margin-right: 8px;
+}
+
+.donate-button:hover {
   background-color: #e68900;
+  transform: scale(1.05);
 }
 
 /* 📌 Rodapé inferior */
@@ -107,6 +107,7 @@
   font-size: 14px;
 }
 
+/* Ajustando links no rodapé */
 .footer-links {
   display: flex;
   gap: 15px;
@@ -126,6 +127,11 @@
   color: #ff9c00;
 }
 
+/* Ajustar cor dos links no rodapé */
+.footer-links a {
+  color: #ddd;
+}
+
 /* 📌 Responsividade */
 
 /* 🔹 Para telas menores que 1024px (tablets e laptops menores) */
@@ -139,18 +145,9 @@
     justify-content: center;
   }
 
-  .newsletter {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
-  .newsletter input {
-    width: 80%;
-  }
-
-  .newsletter button {
-    width: 50%;
+  .donate-button {
+    width: auto;
+    align-self: center;
   }
 }
 
@@ -197,5 +194,10 @@
 
   .social-icons a {
     font-size: 18px;
+  }
+
+  .donate-button {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
