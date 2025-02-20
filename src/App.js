@@ -6,6 +6,8 @@ import Header from "./components/Header/header";
 import About from "./pages/About/About";
 import Donate from "./pages/Donate/Donate";
 import Contact from "./pages/Contact/Contact";
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton"; // 🔹 Importa o botão do WhatsApp
+
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      <WhatsAppButton /> {/* 🔹 Adiciona o botão sempre visível */}
+
     </Router>
   );
 }
