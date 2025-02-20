@@ -5,7 +5,7 @@ import "./WhatsAppButton.css"; // Importa o CSS para estilização
 const WhatsAppButton = () => {
   return (
     <a
-      href="https://wa.me/5511999999999" // 🔹 Substitua pelo seu número do WhatsApp
+      href="https://wa.me/5541987226179" // 🔹 Substitua pelo seu número do WhatsApp
       className="whatsapp-icon"
       target="_blank"
       rel="noopener noreferrer"
