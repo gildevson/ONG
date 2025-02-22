@@ -1,29 +1,19 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home/Home";
+import { BrowserRouter as Router } from "react-router-dom";
+import Header from './components/Header/header';
+import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/header";
-import About from "./pages/About/About";
-import Donate from "./pages/Donate/Donate";
-import Contact from "./pages/Contact/Contact";
-import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton"; // 🔹 Importa o botão do WhatsApp
-
+import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 
 function App() {
   return (
     <Router>
       <Header />
-      <main className="container">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/donate" element={<Donate />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </main>
+      <div className="content">
+        <Carousel /> {/* 🔹 Certifique-se de que o carrossel está aqui */}
+      </div>
       <Footer />
-      <WhatsAppButton /> {/* 🔹 Adiciona o botão sempre visível */}
-
+      <WhatsAppButton />
     </Router>
   );
 }

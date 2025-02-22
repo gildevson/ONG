@@ -1,0 +1,152 @@
+/* 🔹 Container do carrossel */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  min-height: 400px; /* 🔹 Garante que o carrossel tenha um tamanho visível */
+  background-color: #f8f9fa;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* 🔹 Sombra mais pronunciada */
+}
+
+
+
+/* 🔹 Ajuste das imagens do carrossel */
+.carousel-image1 {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  position: relative;
+}
+
+/* 🔹 Efeito de sobreposição nas imagens */
+.carousel-image1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); /* 🔹 Gradiente escuro */
+  border-radius: 15px;
+  pointer-events: none;
+}
+
+/* 🔹 Efeito ao passar o mouse nas imagens */
+.carousel-image1:hover {
+  transform: scale(1.03); /* 🔹 Zoom mais suave */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* 🔹 Estilização dos indicadores (pontos) */
+.slick-dots {
+  bottom: 20px; /* 🔹 Ajuste da posição */
+}
+
+.slick-dots li button:before {
+  font-size: 16px; /* 🔹 Tamanho maior */
+  color: #bbb;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff6a00;
+  opacity: 1;
+  transform: scale(1.2); /* 🔹 Efeito de aumento */
+}
+
+.slick-dots li button:hover:before {
+  color: #ff6a00;
+  opacity: 1;
+}
+
+/* 🔹 Botões de navegação invisíveis */
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+/* 🔹 Melhorando a visibilidade do carrossel */
+.carousel-container1:hover {
+  filter: brightness(1.05);
+}
+
+/* 🔹 Texto sobreposto (opcional) */
+.carousel-text {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* 🔹 Ajuste para telas maiores */
+@media (max-width: 1024px) {
+  .carousel-container1 {
+    max-width: 95%;
+  }
+  .carousel-image1 {
+    height: 400px;
+  }
+}
+
+/* 🔹 Ajuste para tablets */
+@media (max-width: 768px) {
+  .carousel-container1 {
+    max-width: 98%;
+  }
+  .carousel-image1 {
+    height: 350px;
+  }
+  .carousel-text {
+    font-size: 20px;
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+/* 🔹 Ajuste para celulares */
+@media (max-width: 480px) {
+  .carousel-container1 {
+    max-width: 100%;
+  }
+  .carousel-image1 {
+    height: 250px;
+  }
+  .carousel-text {
+    font-size: 18px;
+    bottom: 10px;
+    left: 10px;
+  }
+}
+
+/* 🔹 Transição suave entre os slides */
+.slick-slide {
+  transition: opacity 0.6s ease-in-out;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-slide:not(.slick-active) {
+  opacity: 0.7;
+}
