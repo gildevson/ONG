@@ -1,11 +1,11 @@
-/* 🔹 Container do carrossel */
+/* 🔹 Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* 🔹 Container do carrossel */
 .carousel-container {
   width: 100%;
   max-width: 1200px;
@@ -17,20 +17,18 @@
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  min-height: 400px; /* 🔹 Garante que o carrossel tenha um tamanho visível */
-  background-color: #f8f9fa;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* 🔹 Sombra mais pronunciada */
+  min-height: 400px; /* Garante que o carrossel tenha um tamanho visível */
+  background-color: #1f262c;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* Sombra mais pronunciada */
 }
-
-
 
 /* 🔹 Ajuste das imagens do carrossel */
 .carousel-image1 {
   width: 100%;
   max-height: 500px;
   object-fit: cover;
-  border-radius: 15px;
-  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  border-radius: 0px;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, filter 0.5s ease-in-out;
   position: relative;
 }
 
@@ -42,24 +40,38 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); /* 🔹 Gradiente escuro */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)); /* Gradiente escuro */
   border-radius: 15px;
   pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /* 🔹 Efeito ao passar o mouse nas imagens */
 .carousel-image1:hover {
-  transform: scale(1.03); /* 🔹 Zoom mais suave */
+  transform: scale(1.03); /* Zoom mais suave */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.1); /* Aumenta o brilho */
+}
+
+.carousel-image1:hover::after {
+  opacity: 0.8; /* Aumenta a opacidade do gradiente ao passar o mouse */
 }
 
 /* 🔹 Estilização dos indicadores (pontos) */
 .slick-dots {
-  bottom: 20px; /* 🔹 Ajuste da posição */
+  bottom: 20px; /* Ajuste da posição */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.slick-dots li {
+  margin: 0;
 }
 
 .slick-dots li button:before {
-  font-size: 16px; /* 🔹 Tamanho maior */
+  font-size: 12px; /* Tamanho menor para melhorar a estética */
   color: #bbb;
   opacity: 0.8;
   transition: 0.3s;
@@ -68,7 +80,7 @@
 .slick-dots li.slick-active button:before {
   color: #ff6a00;
   opacity: 1;
-  transform: scale(1.2); /* 🔹 Efeito de aumento */
+  transform: scale(1.5); /* Efeito de aumento */
 }
 
 .slick-dots li button:hover:before {
@@ -81,11 +93,6 @@
   display: none !important;
 }
 
-/* 🔹 Melhorando a visibilidade do carrossel */
-.carousel-container1:hover {
-  filter: brightness(1.05);
-}
-
 /* 🔹 Texto sobreposto (opcional) */
 .carousel-text {
   position: absolute;
@@ -96,11 +103,17 @@
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   z-index: 2;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel-container:hover .carousel-text {
+  transform: translateY(-10px); /* Efeito de flutuação */
+  opacity: 0.9;
 }
 
 /* 🔹 Ajuste para telas maiores */
 @media (max-width: 1024px) {
-  .carousel-container1 {
+  .carousel-container {
     max-width: 95%;
   }
   .carousel-image1 {
@@ -110,7 +123,7 @@
 
 /* 🔹 Ajuste para tablets */
 @media (max-width: 768px) {
-  .carousel-container1 {
+  .carousel-container {
     max-width: 98%;
   }
   .carousel-image1 {
@@ -125,7 +138,7 @@
 
 /* 🔹 Ajuste para celulares */
 @media (max-width: 480px) {
-  .carousel-container1 {
+  .carousel-container {
     max-width: 100%;
   }
   .carousel-image1 {
@@ -148,5 +161,11 @@
 }
 
 .slick-slide:not(.slick-active) {
-  opacity: 0.7;
+  opacity: 10.7;
+}
+
+/* 🔹 Efeito de brilho no container ao passar o mouse */
+.carousel-container:hover {
+  filter: brightness(1.05);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
