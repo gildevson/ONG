@@ -13,6 +13,10 @@ const Home = () => {
         <p className="instituto-subtitle">
           Impactando vidas através da educação, do esporte e da solidariedade.
         </p>
+        <p className="instituto-description">
+          Queremos inspirar e transformar a realidade de crianças e jovens. 
+          Junte-se a nós para criar um futuro melhor!
+        </p>
       </div>
 
       {/* 🔹 Carrossel abaixo do nome do instituto */}

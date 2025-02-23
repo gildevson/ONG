@@ -9,7 +9,7 @@ const Footer = () => {
         
         {/* Sobre a ONG */}
         <div className="footer-section">
-          <h3>Sobre a ONG</h3>
+          <h3>Sobre a Instituto</h3>
           <ul>
             <li><a href="/about">Quem Somos</a></li>
             <li><a href="/mission">Nossa Missão</a></li>

@@ -1,19 +1,19 @@
 /* 🔹 Ajuste do cabeçalho do Instituto */
+/* 🔹 Ajuste do cabeçalho */
 .instituto-header {
-  background: linear-gradient(to bottom, #222, #444); /* Suaviza o contraste */
-  padding: 8% 20px; /* Reduz um pouco o espaçamento */
+  background: linear-gradient(to bottom, #222222, #222222);
+  padding: 8% 20px 4%; /* Reduz o espaço */
   text-align: center;
   width: 100%;
   position: relative;
   z-index: 10;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  color: #fff; /* Mantém o texto legível */
-  font-family: 'Arial', sans-serif;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
-
 .instituto-header p {
   font-size: 1.2rem;
   max-width: 80%;
@@ -164,3 +164,67 @@
     visibility: visible !important;
   }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.instituto-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  text-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  animation: fadeInUp 1s ease-out;
+}
+.instituto-subtitle {
+  font-size: 1.3rem;
+  color: #cccccc;
+  max-width: 650px;
+  margin: 0 auto 20px;
+  font-weight: 400;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.instituto-description {
+  font-size: 1.1rem;
+  color: #dddddd;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0;
+  animation: fadeInUp 1.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.instituto-button {
+  background: linear-gradient(45deg, #ff8800, #e07000);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.3);
+}
+.instituto-button:hover {
+  background: linear-gradient(45deg, #e07000, #ff6600);
+  transform: scale(1.08);
+}
+
+
