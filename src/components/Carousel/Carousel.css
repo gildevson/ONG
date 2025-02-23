@@ -7,23 +7,23 @@
 }
 
 /* 🔹 Container do carrossel */
+/* 🔹 Garantindo que o carrossel não sobreponha o título */
 .carousel-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   overflow: hidden;
   height: 400px; 
-  border-radius: 15px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px 0;
-  min-height: 400px; /* Garante que o carrossel tenha um tamanho visível */
+  min-height: 400px;
   background-color: #1f262c;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* Sombra mais pronunciada */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1; /* Mantém o carrossel abaixo do título */
 }
-
 /* 🔹 Ajuste das imagens do carrossel */
 .carousel-image1 {
   width: 100%;
@@ -171,4 +171,60 @@
 .carousel-container:hover {
   filter: brightness(1.05);
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Garantindo que o carrossel não sobreponha o título */
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 400px; 
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  min-height: 400px;
+  background-color: #1f262c;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 1; /* Mantém o carrossel abaixo do título */
+}
+
+/* 🔹 Garantindo que o título do instituto esteja sempre visível */
+.instituto-header {
+  position: relative;
+  z-index: 5; /* Mantém o título acima do carrossel */
+  background: linear-gradient(to bottom, #111111, #333333);
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+.instituto-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  display: block;
+  visibility: visible;
+}
+
+/* 🔹 Ajustando o carrossel para não empurrar o título para fora */
+@media (min-width: 1024px) {
+  .carousel-container {
+    height: auto; /* Evita que o carrossel empurre o título */
+  }
+
+  .instituto-header {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
