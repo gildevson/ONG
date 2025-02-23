@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -7,6 +8,8 @@ import './Carousel.css';
 import image1 from '../../assets/image1.jpg';
 import image2 from '../../assets/image2.jpg';
 import image3 from '../../assets/image3.jpg';
+
+
 
 const Carousel = () => {
     const settings = {
@@ -35,6 +38,7 @@ const Carousel = () => {
                     <img src={image3} alt="Imagem 3" className="carousel-image1" aria-label="Imagem 3" loading="lazy" />
                     <div className="carousel-text">Texto sobreposto 1</div>
                 </div>
+                
             </Slider>
         </div>
     );

@@ -60,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Minha ONG - Todos os Direitos Reservados.</p>
+        <p>© 2025 influenciando geracoes - Todos os Direitos Reservados.</p>
         <ul className="footer-links">
           <li><a href="/">Início</a></li>
           <li><a href="/cookies">Política de Cookies</a></li>

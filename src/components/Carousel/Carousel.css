@@ -25,9 +25,10 @@
 /* 🔹 Ajuste das imagens do carrossel */
 .carousel-image1 {
   width: 100%;
-  max-height: 500px;
+  max-height: 950px;
   object-fit: cover;
   border-radius: 0px;
+  height: 900px;
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, filter 0.5s ease-in-out;
   position: relative;
 }
