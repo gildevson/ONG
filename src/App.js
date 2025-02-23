@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from './components/Header/header';
-import Carousel from "./components/Carousel/Carousel";
+import AppRoutes from "./temp"; // Verifique se o caminho está correto
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
 
@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Header />
       <div className="content">
-        <Carousel /> {/* 🔹 Certifique-se de que o carrossel está aqui */}
+        <AppRoutes /> {/* Exibe as rotas */}
       </div>
       <Footer />
       <WhatsAppButton />

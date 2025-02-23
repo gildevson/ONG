@@ -1,11 +1,11 @@
-/* 🟠 Estilos do menu principal */
+/* 🔹 Estilos globais do menu */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
   background-color: #FF7800; /* Laranja vibrante */
   color: #fff;
-  padding: 0.8rem 0;
+  padding: 1rem 0;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: background 0.3s ease-in-out;
@@ -27,16 +27,20 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  z-index: 1100; /* Garante que a logo fique sempre acima do menu */
+  z-index: 1100;
 }
 
 .logo-img {
-  height: 80px; /* Ajuste no tamanho */
-  width: 80px;
+  height: 70px; /* Ajuste de tamanho */
+  width: 70px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid white;
-  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-img:hover {
+  transform: scale(1.1);
 }
 
 /* 📌 Ícone do menu hambúrguer */
@@ -44,9 +48,6 @@
   display: none;
   font-size: 2rem;
   cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: 20px;
   color: #fff;
   transition: transform 0.3s ease-in-out;
   z-index: 1101;
@@ -68,6 +69,7 @@
 .nav-links a {
   text-decoration: none;
   color: #fff;
+  font-size: 18px;
   font-weight: bold;
   padding: 10px 15px;
   border-radius: 5px;
@@ -91,20 +93,22 @@
   }
 
   .nav-links {
-    position: absolute;
-    top: 90px; /* Move o menu para baixo da logo */
+    position: fixed;
+    top: 0;
     right: 0;
-    background-color: #FF7800;
     width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro para melhor contraste */
     flex-direction: column;
     align-items: center;
-    padding: 1rem 0;
-    gap: 1rem;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 1.5rem;
     
-    transform: translateY(-150%);
+    transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
 
   /* 📌 Quando o menu estiver aberto */
@@ -112,6 +116,10 @@
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
-    padding-top: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+    padding: 15px 20px;
   }
 }

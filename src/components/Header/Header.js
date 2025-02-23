@@ -30,6 +30,7 @@ const Header = () => {
         {/* Lista de Links do Menu */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><Link to="/" onClick={() => setMenuOpen(false)}>Início</Link></li>
+          <li><Link to="/noticia" onClick={() => setMenuOpen(false)}>Noticias</Link></li>
           <li><Link to="/about" onClick={() => setMenuOpen(false)}>Sobre</Link></li>
           <li><Link to="/donate" onClick={() => setMenuOpen(false)}>Doar</Link></li>
           <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contato</Link></li>

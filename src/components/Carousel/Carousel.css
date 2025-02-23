@@ -55,7 +55,7 @@
 }
 
 .carousel-image1:hover::after {
-  opacity: 0.8; /* Aumenta a opacidade do gradiente ao passar o mouse */
+  opacity: 0.5; /* Aumenta a opacidade do gradiente ao passar o mouse */
 }
 
 /* 🔹 Estilização dos indicadores (pontos) */
