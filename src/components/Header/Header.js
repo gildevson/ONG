@@ -13,6 +13,7 @@ const Header = () => {
     setTimeout(() => {
       navigate(path); // Redireciona para a página clicada
       setLoading(false);
+      setMenuOpen(false); // Fecha o menu após a navegação
     }, 1000); // Simula carregamento de 1 segundo
   };
 

@@ -1,18 +1,20 @@
 import React from "react";
 import Carousel from "../../components/Carousel/Carousel";
-import "./Home.css"; // Arquivo de estilo para a página Home
+import "./Home.css"; // Arquivo de estilo atualizado
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <Carousel />
-      <div className="home-content">
-        <h1 className="home-title">INSTITUTO INFLUENCIANDO GERAÇÕES</h1>
-        <p className="home-description">
-          Trabalhamos para transformar vidas através de projetos sociais.
-        </p>
+    <>
+      <Carousel /> {/* Agora está fora de qualquer estilização */}
+      <div className="home-wrapper2">
+        <div className="content-section2">
+          <h1 className="content-title2">INSTITUTO INFLUENCIANDO GERAÇÕES</h1>
+          <p className="content-description2">
+            Trabalhamos para transformar vidas através de projetos sociais.
+          </p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
