@@ -9,7 +9,7 @@ const Footer = () => {
         
         {/* Sobre a ONG */}
         <div className="footer-section">
-          <h3>Sobre a Instituto</h3>
+          <h3>Sobre o Instituto</h3>
           <ul>
             <li><a href="/about">Quem Somos</a></li>
             <li><a href="/mission">Nossa Missão</a></li>
@@ -22,9 +22,9 @@ const Footer = () => {
         {/* Contato */}
         <div className="footer-section">
           <h3>Contato</h3>
-          <p>Rua Esperança, 123, São Paulo, Brasil</p>
-          <p>📞 +55 11 98765-4321</p>
-          <p>✉️ contato@minhaong.org</p>
+          <p>Rua Esperança, 123, Piraquara - PR, Brasil</p>
+          <p>📞 +55 41 98765-4321</p>
+          <p>✉️ Influenciandogerações@gmail.com</p>
           <div className="social-icons">
             <a href="https://facebook.com/infleunciandogerações" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
