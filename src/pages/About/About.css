@@ -1,10 +1,100 @@
 .about-container {
-    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 200px 20px;
     text-align: center;
+    background-color: #fff;
 }
 
-.about-container h1 {
-    color: #ff6a00;
-    font-size: 32px;
+.about-logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
     margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 1024px) {
+    .about-container {
+        max-width: 85%;
+        padding: 40px 15px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        max-width: 95%;
+        padding: 30px 10px;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .about-logo {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-container {
+        padding: 20px 5px;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+    }
+
+    .about-logo {
+        width: 80px;
+    }
+}
+
+/* Estilizando o botão */
+.about-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.about-button:hover {
+    background-color: #cc5500;
 }

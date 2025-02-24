@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaYoutube, FaInstagram, FaHandHoldingHeart } from "react-icons/fa"; // Alterado para FaHandHoldingHeart
+import { FaFacebook, FaYoutube, FaInstagram, FaHandHoldingHeart } from "react-icons/fa"; // Alterado para FaHandHoldingHeart
 import "./footer.css";
 
 const Footer = () => {
@@ -26,16 +26,13 @@ const Footer = () => {
           <p>📞 +55 11 98765-4321</p>
           <p>✉️ contato@minhaong.org</p>
           <div className="social-icons">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://facebook.com/infleunciandogerações" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaTwitter />
-            </a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@Influenciandogeracoes_" target="_blank" rel="noopener noreferrer">
               <FaYoutube />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/influenciandogeracoes_/" target="_blank" rel="noopener noreferrer">
               <FaInstagram />
             </a>
           </div>
