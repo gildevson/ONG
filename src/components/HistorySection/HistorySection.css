@@ -1,0 +1,172 @@
+/* 🔹 Seção História (inicia invisível e deslocada para baixo) */
+.history-section {
+    background: #f8f8f8;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 🔹 Quando a seção estiver visível, ativa a animação */
+.history-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Container principal */
+.history-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    align-items: center;
+}
+
+/* 🔹 Imagem com efeito preto e branco */
+.history-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 🔹 Efeito ao passar o mouse */
+.history-image img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* 🔹 Texto estilo jornal */
+.history-text {
+    max-width: 600px;
+    text-align: left;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Título estilo manchete */
+.history-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    text-align: center;
+    border-bottom: 3px solid #222;
+    padding-bottom: 5px;
+}
+
+/* 🔹 Parágrafos com espaçamento estilo notícia */
+.history-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: justify;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 992px) {
+    .history-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-text {
+        max-width: 100%;
+    }
+}
+
+
+/* 🔹 Seção História (inicia invisível e deslocada para baixo) */
+.history-section {
+    background: #f8f8f8;
+    padding: 100px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+/* 🔹 Quando a seção estiver visível, ativa a animação */
+.history-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 🔹 Container principal */
+.history-container {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    align-items: center;
+}
+
+/* 🔹 Imagem com efeito preto e branco */
+.history-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* 🔹 Efeito ao passar o mouse */
+.history-image img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* 🔹 Texto estilo jornal */
+.history-text {
+    max-width: 600px;
+    text-align: left;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Título estilo manchete */
+.history-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+    text-align: center;
+    border-bottom: 3px solid #222;
+    padding-bottom: 5px;
+}
+
+/* 🔹 Parágrafos com espaçamento estilo notícia */
+.history-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #222;
+    text-align: justify;
+}
+
+/* 🔹 Responsividade */
+@media (max-width: 992px) {
+    .history-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .history-text {
+        max-width: 100%;
+    }
+}
