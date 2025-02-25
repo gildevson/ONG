@@ -30,13 +30,13 @@ const Contact = () => {
 
           {/* 🔹 Links das Redes Sociais */}
           <div className="contact-social">
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="social-link youtube">
+            <a href="https://facebook.com/infleunciandogerações" target="_blank" rel="noopener noreferrer" className="social-link youtube">
               <FaYoutube /> YouTube
             </a>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="social-link facebook">
+            <a href="https://facebook.com/infleunciandogerações" target="_blank" rel="noopener noreferrer" className="social-link facebook">
               <FaFacebook /> Facebook
             </a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
+            <a href="https://www.instagram.com/influenciandogeracoes_/" target="_blank" rel="noopener noreferrer" className="social-link instagram">
               <FaInstagram /> Instagram
             </a>
           </div>
