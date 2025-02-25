@@ -4,7 +4,7 @@ import AppRoutes from "./temp"; // Verifique se o caminho está correto
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
-import HistorySection from "./components/HistorySection/HistorySection";
+/*import HistorySection from "./pages/HistorySection/HistorySection";*/
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header />
       <div className="content">
         <AppRoutes /> {/* Exibe as rotas */}
-        <HistorySection /> {/* 🔥 Seção da História após as rotas */}
+     
       </div>
       <Footer />
       <WhatsAppButton />
