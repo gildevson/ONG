@@ -188,3 +188,21 @@ body {
     object-fit: contain;
   }
 }
+
+@media (max-width: 600px) {
+  .imagem-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .instituto-image {
+    max-width: 100%; /* 🔥 Aumenta a largura da imagem */
+    height: auto;
+    object-fit: cover; /* 🔥 Mantém o aspecto correto */
+    max-height: 320px; /* 🔥 Aumenta a altura da imagem */
+    border-radius: 15px;
+  }
+}
