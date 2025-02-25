@@ -1,19 +1,38 @@
-/* 🔹 Reset básico */
+/* 🔹 Reset Padrão */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 🔹 Wrapper da seção */
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Wrapper principal */
 .home-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 100px 20px;
-  margin-top: 15px;
-  background: #f4f4f4; /* Fundo suave para melhor contraste */
+  padding: 5% 20px;
+  background: linear-gradient(to bottom right, #ff9f61, #e8c28a);
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔹 Efeito curvado no fundo */
+.home-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: linear-gradient(to right, #f6f6f6, #ddd);
+  border-bottom-left-radius: 50% 40%;
+  border-bottom-right-radius: 45% 30%;
+  z-index: 0;
 }
 
 /* 🔹 Seção principal */
@@ -22,172 +41,221 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: white;
-  padding: 60px;
-  width: 100%;
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1); /* Suavizando a sombra */
-  border-radius: 15px; /* Bordas mais suaves */
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 90%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 2;
+  padding: 50px 30px;
 }
 
-/* 🔹 Efeito ao passar o mouse */
-.instituto-section:hover {
-  transform: scale(1.01); /* Leve zoom */
-  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* 🔹 Texto do Instituto */
+/* 🔹 Texto */
 .instituto-text {
   width: 50%;
-  max-width: 550px;
-  text-align: left;
-  padding: 20px;
+  max-width: 600px;
+  padding-right: 50px;
+  animation: fadeInUp 0.8s ease-out; /* Suaviza o carregamento do texto */
 }
 
 .instituto-text h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #333;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 25px;
 }
 
 .instituto-text p {
-  font-size: 1.2rem;
-  color: #555;
-  line-height: 1.7;
-  font-weight: 400;
-  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #141414;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 /* 🔹 Botão estilizado */
 .instituto-button {
-  background: linear-gradient(45deg, #ff8800, #e07000);
+  background: #298000;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 14px 22px;
+  padding: 14px 26px;
   border-radius: 8px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 8px;
   margin-top: 20px;
   transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
-  box-shadow: 0px 5px 15px rgba(255, 136, 0, 0.3);
 }
 
-.instituto-button:hover {
-  background: linear-gradient(45deg, #e07000, #ff6600);
-  transform: scale(1.08);
+/* 🔹 Carrossel */
+.carrossel-container {
+  width: 50%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
-/* 🔹 Container da Imagem */
-.instituto-image-container {
-  width: 45%;
-  max-width: 450px;
-  display: flex;
-  justify-content: center;
-}
-
+/* 🔹 Imagem dentro do carrossel */
 .instituto-image {
   width: 100%;
+  height: auto;
+  object-fit: contain; /* Mantém a imagem inteira sem cortes */
+  max-height: 350px;
   border-radius: 15px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-/* 🔹 Efeito na imagem ao passar o mouse */
-.instituto-image:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.15);
+/* 🔹 Animação para entrada do texto */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* 🔹 Responsividade para tablets */
+/* 🔹 Ajuste de responsividade */
 @media (max-width: 992px) {
   .instituto-section {
     flex-direction: column;
     text-align: center;
-    padding: 40px;
-  }
-
-  .instituto-text {
-    width: 90%;
-    text-align: center;
-  }
-
-  .instituto-image-container {
-    width: 90%;
-    margin-top: 20px;
-  }
-}
-
-/* 🔹 Responsividade para celulares */
-@media (max-width: 600px) {
-  .instituto-text h2 {
-    font-size: 1.8rem;
-  }
-
-  .instituto-text p {
-    font-size: 1rem;
-  }
-
-  .instituto-image-container {
-    width: 100%;
-  }
-
-  .instituto-button {
-    width: 100%;
-    max-width: 250px;
-  }
-}
-
-
-/* 🔹 Responsividade para telas menores (celulares) */
-@media (max-width: 600px) {
-  .home-wrapper {
-    padding: 05px 15px; /* Reduz o espaço lateral */
-  }
-
-  .instituto-section {
-    padding: 10px; /* Menos padding para não ocupar tanto espaço */
-    text-align: center;
+    padding: 40px 20px;
   }
 
   .instituto-text {
     width: 100%;
+    max-width: 700px;
     text-align: center;
+    padding-right: 0;
+    margin-bottom: 20px;
   }
 
   .instituto-text h2 {
-    font-size: 1.5rem; /* Reduz o tamanho do título */
-    line-height: 1.3;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
-  .instituto-text p {
-    font-size: 1rem; /* Ajusta o tamanho do parágrafo */
-    line-height: 1.6;
-  }
-
-  .instituto-button {
+  .carrossel-container {
     width: 100%;
-    max-width: 220px;
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  .instituto-image-container {
-    width: 100%;
-    margin-top: 15px; /* Dá espaço entre o texto e a imagem */
-    display: flex;
-    justify-content: center;
+    max-width: 500px;
+    height: auto;
   }
 
   .instituto-image {
-    width: 90%;
-    max-width: 350px; /* Evita que a imagem fique muito grande */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 280px; /* Ajusta a altura da imagem para caber no mobile */
+  }
+}
+
+/* 🔹 Melhor ajuste para celular */
+
+@media (max-width: 600px) {
+  .home-wrapper {
+    padding: 15px; /* 🔥 Reduzi o padding geral para um encaixe melhor */
+  }
+
+  .instituto-section {
+    padding: 20px 15px;
+  }
+
+  .instituto-text {
+    padding: 0 10px; /* 🔥 Diminuí o espaço lateral do texto */
+    margin-bottom: 5px; /* 🔥 Reduzi a margem inferior */
+  }
+
+  .instituto-text h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .instituto-text p {
+    font-size: 1rem;
+    line-height: 1.3; /* 🔥 Reduzi um pouco o espaçamento entre as linhas */
+    margin-bottom: 5px; /* 🔥 Diminuí os espaços entre os parágrafos */
+  }
+
+  .instituto-button {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* 🔥 Ajuste do carrossel para não encostar no WhatsApp */
+  .carrossel-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px; /* 🔥 Adiciona mais espaço abaixo da imagem */
+  }
+
+  .instituto-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 220px;
+    margin-bottom: 10px; /* 🔥 Adiciona um pequeno espaço entre a imagem e o botão do WhatsApp */
+  }
+}
+
+
+
+/* 🔹 Efeito de zoom sutil nas imagens */
+.instituto-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.instituto-image:hover {
+  transform: scale(1.05);
+}
+
+.carrossel-container {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 80px; /* 🔥 Adiciona espaçamento abaixo da imagem */
+}
+
+.instituto-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 250px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* 🔹 Estilizando o título do instituto */
+.instituto-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  animation: fadeInUp 0.8s ease-in-out; /* Efeito de entrada */
+}
+
+.instituto-title span {
+  color: #f04e30; /* 🔥 Cor diferenciada para "INSTITUTO" */
+  font-weight: bold;
+}
+
+/* 🔹 Ajuste para mobile */
+@media (max-width: 600px) {
+  .instituto-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
   }
 }
