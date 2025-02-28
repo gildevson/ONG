@@ -16,12 +16,10 @@ const Home = () => {
             <span>INSTITUTO</span> <strong>INFLUENCIANDO GERAÇÕES</strong>
           </h2>
           <p>
-            O <strong>Transformando Vidas Através da Educação e Solidariedade - Instituto Influenciando Gerações</strong> é uma organização sem fins lucrativos
-            dedicada a proporcionar oportunidades para crianças, jovens e famílias, promovendo inclusão
-            por meio da educação, esporte e iniciativas sociais.
+            O <strong>Instituto Influenciando Gerações</strong> é uma organização sem fins lucrativos dedicada a defender e proteger os direitos das crianças e dos jovens de Piraquara, além de buscar proporcionar oportunidade e inclusão por meio da educação, do esporte e de iniciativas sociais.
           </p>
           <p>
-            Acreditamos que <strong>pequenas ações geram grandes mudanças!</strong> Venha fazer parte dessa transformação.
+            Acreditamos que <strong>pequenas ações podem gerar grandes mudanças e salvar vidas!</strong> Venha fazer parte dessa transformação.
           </p>
           <a href="/sobre" className="instituto-button">
             Saiba Mais <FaArrowRight />
