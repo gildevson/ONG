@@ -4,10 +4,10 @@
   margin: 120px auto;
   padding: 20px;
   font-family: "Arial", sans-serif;
-  background: linear-gradient(180deg, #a0561a 0%, #302610 100%);
-  color: #df2020;
+  background: #292827;
+  color: #181717;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(37, 36, 36, 0.2);
 }
 
 /* Título principal */
@@ -177,3 +177,4 @@
     height: 220px;
   }
 }
+
