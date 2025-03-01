@@ -1,0 +1,179 @@
+/* Container principal da página de projetos */
+.projects-container {
+  max-width: 1200px;
+  margin: 120px auto;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(180deg, #a0561a 0%, #302610 100%);
+  color: #df2020;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título principal */
+.projects-container h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #faf8f4;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Texto introdutório */
+.projects-intro {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Cada linha de projeto */
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-row:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Área de texto */
+.project-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Título do projeto */
+.project-title {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #f3efea;
+  font-weight: bold;
+}
+
+/* Descrição do projeto */
+.project-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  line-height: 1.5;
+}
+
+/* Lista interna */
+.project-list {
+  list-style: disc;
+  margin-left: 20px;
+  color: #ddd;
+}
+
+.project-list li {
+  margin-bottom: 8px;
+}
+
+/* Carrossel de Imagens */
+.project-carousel {
+  width: 450px;
+  max-width: 100%;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Swiper geral */
+.swiper {
+  width: 100%;
+  height: 270px;
+  border-radius: 12px;
+}
+
+/* Imagens no Swiper */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilizando as setas de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #e9e1e3;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ffad33;
+}
+
+/* Estilizando os bullets da paginação */
+.swiper-pagination-bullet {
+  background: #f48c06;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffad33;
+  opacity: 1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .project-text {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .project-carousel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    margin: 2px auto;
+    padding: 15px;
+  }
+
+  .projects-container h1 {
+    font-size: 28px;
+  }
+
+  .projects-intro {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-description {
+    font-size: 14px;
+  }
+
+  .swiper {
+    height: 220px;
+  }
+}

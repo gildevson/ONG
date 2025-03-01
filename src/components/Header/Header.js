@@ -47,6 +47,7 @@ const Header = () => {
             <li><button onClick={() => handleNavigation("/")}>Início</button></li>
             <li><button onClick={() => handleNavigation("/noticia")}>Notícias</button></li>
             <li><button onClick={() => handleNavigation("/about")}>Sobre</button></li>
+            <li><button onClick={() => handleNavigation("/project")}>Projetos</button></li>
             <li><button onClick={() => handleNavigation("/donate")}>Doar</button></li>
             <li><button onClick={() => handleNavigation("/contact")}>Contato</button></li>
           </ul>

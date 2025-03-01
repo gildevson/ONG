@@ -1,20 +1,183 @@
+/* Container principal */
 .donate-container {
-    padding: 40px;
-    text-align: center;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 30px;
+  font-family: "Arial", sans-serif;
+  color: #333;
+  /* Gradiente de fundo */
+  background: linear-gradient(160deg, #fff8ef 0%, #fff2e0 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Título principal */
 .donate-container h1 {
-    color: #ff6a00;
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #f48c06; /* Ajuste a cor principal conforme desejar */
+  text-align: center;
 }
 
-.donate-button {
-    background-color: #ff6a00;
-    color: white;
-    padding: 10px 20px;
+/* Subtítulo / texto introdutório */
+.subtitle {
+  font-size: 17px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+  text-align: center;
+  color: #555;
+}
+
+/* Cada opção de doação (Pix, Online etc.) */
+.donation-option {
+  background-color: #ffffff;
+  border: 1px solid #f4c484;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover nos cards */
+.donation-option:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Título de cada opção de doação */
+.donation-option h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f48c06;
+}
+
+/* Parágrafo de cada opção */
+.donation-option p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Área para centralizar e dar espaço ao QR Code */
+.qrcode-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Imagem do QR Code */
+.qrcode-image {
+  width: 200px;
+  height: auto;
+  border: 2px solid #f48c06;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* EXIBIR A CHAVE PIX (opcional) */
+.pix-key-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.pix-key {
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #f4c484;
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Centraliza os botões */
+}
+
+/* Botão de copiar chave Pix */
+.copy-button {
+  background-color: #f48c06;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: #e07a00;
+}
+
+/* Botões de doação online */
+.online-donate-button {
+  background-color: #fff;
+  color: #f48c06;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: 2px solid #f48c06;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.online-donate-button:hover {
+  background-color: #f48c06;
+  color: #fff;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .donate-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .donate-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .donation-option {
+    padding: 20px;
+  }
+
+  .donation-option h2 {
     font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  }
+
+  .donation-option p {
+    font-size: 14px;
+  }
+
+  .qrcode-image {
+    width: 150px;
+  }
+
+  .copy-button,
+  .online-donate-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .pix-key {
+    font-size: 14px;
+    padding: 6px 10px;
+    max-width: 200px;
+  }
 }

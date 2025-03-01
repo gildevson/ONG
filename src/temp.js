@@ -14,7 +14,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/donate" element={<Donate />} />
-      <Route path="/projects" element={<Projects />} />
+      <Route path="/project" element={<Projects />} />
       <Route path="/transparency" element={<Transparency />} />
     </Routes>
   );
