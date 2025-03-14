@@ -14,20 +14,29 @@ import batalhaRap from "../images/alimentacaoSolidaria.jpg";
 const projectList = [
   {
     id: 1,
-    title: "Projeto de Apoio Escolar",
+    title: "BATALHA DO HOLANDES",
     description:
-      "Oferecemos reforço escolar e materiais didáticos para crianças e adolescentes em situação de vulnerabilidade.",
+      "Assim como no futebol, o intuito da nossa batalha de rima é se aproximar da juventude local só que dessa vez, através do hip-hop. Mas não só isso, nós também procuramos, através da batalha trazer e mostrar uma outra perspectiva para as crianças da região, pois, muitos ainda enxergam apenas o futebol como opção e esquecem às tantas outras possibilidades em seus caminhos. As batalhas sempre são incríveis, com diversos assuntos sendo colocados em pauta e debatidos em forma de rap, como por exemplo classes sociais, igualdade, política, racismo e muitos outros temas que surgem conforme a batalha acontece.",
     images: [alimentacaoSolidaria, batalhaRap, alimentacaoSolidaria],
     items: ["Reforço escolar personalizado", "Doação de livros", "Aulas online"]
   },
   {
     id: 2,
-    title: "Projeto de Alimentação Solidária",
+    title: "ENCONTRO INFLUENCIE",
     description:
-      "Distribuímos refeições e cestas básicas para famílias carentes em diversas regiões.",
+      "ENCONTRO INFLUENCIE - Todo primeiro sábado do mês, realizamos o ENCONTRO INFLUENCIE na praça do CISA BETONEX, a mais movimentada do bairro, nesses encontros que promovemos nas praças, sempre temos surpresas. Já descobrimos abuso sexual, depressão profunda e até intenções suicidas. Essa atividade sempre atrai dezenas de vidas, que sempre estão ali conosco lutando para se tornar pessoas melhores e vencer as crises e dificuldades que a vida lhes traz. Nesses encontros, sempre buscamos lembrá-los de suas capacidades e principalmente, que eles não estão sozinhos, que podem sim, independente das barreiras vencer na vida e iniciar uma história cheia de conquistas e realizações.",
+    images: [alimentacaoSolidaria, batalhaRap, alimentacaoSolidaria],
+    items: ["Coleta de alimentos", "Preparo de refeições", "Entrega a comunidades"]
+  },
+  {
+    id: 3,
+    title: "JARDIM HOLANDES FC",
+    description:
+      "JARDIM HOLANDÊS FC - O Jardim holandês fc, é um projeto que, utiliza o esporte, mais especificamente o futebol para atrair as crianças para o nosso espaço e assim, identificar de forma mais detalhada e profunda como ajudá-las. Basicamente usamos o futebol como isca pois por exemplo, antes do futebol tem a nossa famosa RODA DE CONVERSA, um momento em que ficamos 30 minutos falando sobre algum tema que é levantado por eles mesmo ali no momento como ANSIEDADE, DEPRESSÃO, MEDO, FUTURO, VALORES e por aí vai, sempre são momentos muito interessantes onde eles interagem entre si e automaticamente se ajudam. Além disso, após o final das atividades, também cedemos o lanche para todas as crianças que participaram conosco das atividades, sendo esse um dos momentos mais importantes pra muitos, já que muitos se encontram em situação de vulnerabilidade social.",
     images: [alimentacaoSolidaria, batalhaRap, alimentacaoSolidaria],
     items: ["Coleta de alimentos", "Preparo de refeições", "Entrega a comunidades"]
   }
+  
 ];
 
 const Projects = () => {
