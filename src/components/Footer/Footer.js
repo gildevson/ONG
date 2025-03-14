@@ -22,9 +22,9 @@ const Footer = () => {
         {/* Contato */}
         <div className="footer-section">
           <h3>Contato</h3>
-          <p>Rua Esperança, 123, Piraquara - PR, Brasil</p>
-          <p>📞 +55 41 98765-4321</p>
-          <p>✉️ Influenciandogerações@gmail.com</p>
+          <p>Endereço: Rua Argemiro Rodrigues de Paula, 332- Guarituba Piraquara - PR, Brasil</p>
+          <p>📞 +55 41 98505‑0555</p>
+          <p>✉️ influenciandoumageracao.jd@gmail.com</p>
           <div className="social-icons">
             <a href="https://facebook.com/infleunciandogerações" target="_blank" rel="noopener noreferrer">
               <FaFacebook />
