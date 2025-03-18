@@ -34,7 +34,7 @@ const projectList = [
     description:
       "JARDIM HOLANDÊS FC - O Jardim holandês fc, é um projeto que, utiliza o esporte, mais especificamente o futebol para atrair as crianças para o nosso espaço e assim, identificar de forma mais detalhada e profunda como ajudá-las. Basicamente usamos o futebol como isca pois por exemplo, antes do futebol tem a nossa famosa RODA DE CONVERSA, um momento em que ficamos 30 minutos falando sobre algum tema que é levantado por eles mesmo ali no momento como ANSIEDADE, DEPRESSÃO, MEDO, FUTURO, VALORES e por aí vai, sempre são momentos muito interessantes onde eles interagem entre si e automaticamente se ajudam. Além disso, após o final das atividades, também cedemos o lanche para todas as crianças que participaram conosco das atividades, sendo esse um dos momentos mais importantes pra muitos, já que muitos se encontram em situação de vulnerabilidade social.",
     images: [alimentacaoSolidaria, batalhaRap, alimentacaoSolidaria],
-    items: ["Coleta de alimentos", "Preparo de refeições", "Entrega a comunidades"]
+    items: ["Futebol como ferramenta de transformação", "Diálogos e escuta ativa", "Inclusão e acolhimento"]
   }
   
 ];
