@@ -1,38 +1,70 @@
+/* Ajuste no container principal */
 .about-container {
-    max-width: 900px;
+    max-width: 1200px; /* Aumenta a largura máxima */
+    width: 80%; /* Ajusta para ocupar mais espaço na tela */
     margin: 0 auto;
-    padding: 200px 20px;
+    padding: 50px 20px;
     text-align: center;
     background-color: #fff;
+    border-radius: 10px;
 }
 
-.about-logo {
-    width: 120px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-}
-
+/* Ajuste no título */
 .about-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #333;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
+/* Ajuste no texto */
 .about-text {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #444;
     line-height: 1.8;
-    text-align: justify;
-    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto para melhor leitura */
+    max-width: 1000px; /* Garante que o texto não fique muito estreito */
+    margin: 0 auto 15px;
 }
 
-/* Melhorando a responsividade */
+/* Seção História */
+.history-section {
+    margin-top: 40px;
+    padding: 40px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    text-align: justify;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animação da seção de história */
+.history-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
 @media (max-width: 1024px) {
     .about-container {
-        max-width: 85%;
+        width: 90%;
         padding: 40px 15px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        width: 95%;
+        padding: 30px 10px;
     }
 
     .about-title {
@@ -44,10 +76,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .about-container {
-        max-width: 95%;
-        padding: 30px 10px;
+        padding: 20px 5px;
+        width: 100%;
     }
 
     .about-title {
@@ -56,45 +88,5 @@
 
     .about-text {
         font-size: 1rem;
-        text-align: left;
     }
-
-    .about-logo {
-        width: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-container {
-        padding: 20px 5px;
-    }
-
-    .about-title {
-        font-size: 1.5rem;
-    }
-
-    .about-text {
-        font-size: 0.9rem;
-    }
-
-    .about-logo {
-        width: 80px;
-    }
-}
-
-/* Estilizando o botão */
-.about-button {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    margin-top: 20px;
-}
-
-.about-button:hover {
-    background-color: #cc5500;
 }
