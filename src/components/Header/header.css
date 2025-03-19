@@ -13,7 +13,14 @@
   justify-content: center;
 }
 
-/* 📌 Container centralizado sim */
+/* 📌 Evita sobreposição no conteúdo abaixo */
+body {
+  padding-top: 80px; /* Ajuste conforme o tamanho do menu */
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* 📌 Container centralizado */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -89,15 +96,20 @@
     display: block;
   }
 
-  /* 📌 Mantém a logo visível e impede sobreposição */
+  /* 📌 Mantém a navbar fixa e visível */
   .navbar {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 0;
   }
 
+  /* 📌 Corrigindo altura do menu para evitar espaços extras */
   .nav-links {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
@@ -124,4 +136,11 @@
     font-size: 22px;
     padding: 15px 20px;
   }
+}
+
+/* 📌 Ajuste extra para remover margens desnecessárias */
+main {
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 1200px;
 }
