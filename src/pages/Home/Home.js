@@ -56,7 +56,7 @@ const Home = () => {
   const handleNavigation = () => {
     setLoading(true);
     setTimeout(() => {
-      navigate("/transparencia"); // Redireciona após 2 segundos
+      navigate("/Programa"); // Redireciona após 2 segundos
     }, 2000);
   };
 
