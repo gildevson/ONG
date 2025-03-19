@@ -324,97 +324,121 @@ body {
 
 
 /* 🔹 Seção de Apoiadores */
+/* Seção de Apoiadores */
+/* Seção de Apoiadores */
 .instituto-supporters {
   text-align: center;
-  margin-top: 50px;
-  padding: 40px 20px;
-  margin-bottom: 1px;
-  background-color: #f8f8f8;
-  border-radius: 10px;
-}
-
-.supporters-title {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #444;
-}
-
-/* 🔹 Cards dos Apoiadores */
-.supporters-cards {
+  margin: 50px auto;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* 🔥 Cards dos Apoiadores com efeito */
-.supporter-card {
-  background: white;
-  padding: 15px;
-  width: 200px;
-  max-width: 220px;
-  min-height: 220px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+/* Card de Destaque dos Apoiadores */
+.supporters-highlight {
+  max-width: 700px;
+  background: linear-gradient(135deg, #ffffff, #f4f4f4);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
+  margin-bottom: 25px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* 🔥 Efeito hover */
-.supporter-card:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+.supporters-highlight:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* 🔥 Logo dentro do card */
-.supporter-logo {
-  width: 100%;
-  max-width: 150px;
-  height: 100px;
-  object-fit: contain;
-  border-radius: 10px;
-}
-
-/* 🔥 Nome do apoiador */
-.supporter-name {
-  font-size: 16px;
+.supporters-highlight h3 {
+  font-size: 22px;
   font-weight: bold;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.supporters-highlight p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+/* Título da seção */
+.supporters-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
   color: #333;
 }
 
-/* 🔹 Responsividade */
-@media (max-width: 992px) {
-  .supporters-cards {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .supporter-card {
-    width: 40%;
-    max-width: 250px;
-  }
+/* Contêiner de apoiadores */
+.supporters-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 80%;
 }
 
+/* Card de cada apoiador */
+.supporter-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.supporter-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagem do apoiador */
+.supporter-logo {
+  max-width: 100%;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.supporter-card:hover .supporter-logo {
+  transform: scale(1.05);
+}
+
+/* Nome do apoiador */
+.supporter-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsividade */
 @media (max-width: 768px) {
   .supporters-cards {
-    flex-direction: column;
-    align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
   }
-
+  
   .supporter-card {
-    width: 80%;
-    max-width: 300px;
+      width: 45%;
   }
 }
 
 @media (max-width: 480px) {
+  .supporters-cards {
+      flex-direction: column;
+  }
+
   .supporter-card {
-    width: 100%;
-    max-width: 320px;
-    padding: 20px;
+      width: 100%;
   }
 }

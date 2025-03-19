@@ -1,5 +1,5 @@
 import React from "react";
-import "./Transparency.css";
+import "./Programa.css";
 
 const News = ({ title, date, content }) => {
   return (

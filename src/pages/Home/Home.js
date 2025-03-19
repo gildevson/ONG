@@ -1,16 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
+import Loading from "../../components/Loading"; // Caminho correto para importar o Loading
 
 // Importando imagem principal
 import image1 from "../../assets/image1.jpg";
 
-// Importando imagens dos apoiadores (garanta que são diferentes!)
-import supporter1 from "../../assets/image1.jpg";
-import supporter2 from "../../assets/image1.jpg";
-import supporter3 from "../../assets/image1.jpg";
-import supporter4 from "../../assets/image1.jpg";
-import supporter5 from "../../assets/image1.jpg";
+// Importando imagens dos apoiadores
+import supporter1 from "../../assets/apoiador1.png";
+import supporter2 from "../../assets/apoiador2.jpeg";
 
 // Ícones para os cards principais
 import { FaHandsHelping, FaBookOpen, FaUsers, FaHeart } from "react-icons/fa";
@@ -45,18 +44,28 @@ const cards = [
 
 // Dados dinâmicos para os apoiadores
 const supporters = [
-  { id: 1, name: "Certificada", logo: supporter1 },
-  { id: 2, name: "Selo ODS", logo: supporter2 },
-  { id: 3, name: "Prêmio Impulso", logo: supporter3 },
-  { id: 4, name: "Prêmio Comunicação", logo: supporter4 },
-  { id: 5, name: "BNI Member", logo: supporter5 },
+  { id: 1, name: "Henrique Imóvel Legal", logo: supporter1 },
+  { id: 2, name: "CECOVI", logo: supporter2 },
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false); // Estado para controlar o carregamento
+
+  // Função para exibir a tela de carregamento antes de redirecionar
+  const handleNavigation = () => {
+    setLoading(true);
+    setTimeout(() => {
+      navigate("/transparencia"); // Redireciona após 2 segundos
+    }, 2000);
+  };
+
   return (
     <div className="home-wrapper">
+      {/* Exibe a tela de carregamento enquanto o estado estiver ativo */}
+      {loading && <Loading />} 
+
       <div className="instituto-section">
-        
         {/* 🔹 Seção de Texto */}
         <div className="instituto-text">
           <h2 className="instituto-title">
@@ -68,9 +77,9 @@ const Home = () => {
           <p>
             Acreditamos que <strong>pequenas ações podem gerar grandes mudanças e salvar vidas!</strong> Venha fazer parte dessa transformação.
           </p>
-          <a href="Projects" className="instituto-button">
+          <button onClick={handleNavigation} className="instituto-button">
             Saiba Mais <FaArrowRight />
-          </a>
+          </button>
         </div>
 
         {/* 🔹 Imagem posicionada corretamente */}
@@ -91,7 +100,12 @@ const Home = () => {
 
         {/* 🔹 Seção de Apoiadores */}
         <div className="instituto-supporters">
-          <h2 className="supporters-title">Nossos Apoiadores</h2>
+          {/* 🔹 Card informativo antes dos apoiadores */}
+          <div className="supporters-highlight">
+            <h3>Principais Apoiadores</h3>
+            <p>Essas empresas são fundamentais para o nosso projeto, fornecendo suporte para nossas ações sociais. Agradecemos por acreditarem em nossa missão!</p>
+          </div>
+
           <div className="supporters-cards">
             {supporters.map((supporter) => (
               <div key={supporter.id} className="supporter-card">
@@ -101,7 +115,6 @@ const Home = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

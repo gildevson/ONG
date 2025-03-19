@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./About.css";
-import logo from "./logo.png"; // Substitua pelo caminho correto da sua imagem
+ // Substitua pelo caminho correto da sua imagem
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div className="about-container">
       {/* Logo e Quem Somos */}
-      <img src={logo} alt="Instituto Influenciando Gerações" className="about-logo" />
+     
       <h1 className="about-title">Quem Somos?</h1>
       <p className="about-text">
         O <strong>Instituto Influenciando Gerações</strong> é uma instituição sem fins lucrativos que há alguns anos
