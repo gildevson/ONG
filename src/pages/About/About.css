@@ -1,74 +1,94 @@
-/* Ajuste no container principal */
+/* 🔹 Container Principal */
 .about-container {
-    max-width: 1200px; /* Aumenta a largura máxima */
-    width: 80%; /* Ajusta para ocupar mais espaço na tela */
-    margin: 0 auto;
-    padding: 50px 20px;
+    max-width: 1100px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 80px 20px;
+    background: #fff;
+    border-radius: 12px;
     text-align: center;
-    background-color: #fff;
-    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in-out;
 }
 
-/* Ajuste no título */
-.about-title {
-    font-size: 3rem;
-    color: #333;
+/* 🔹 Logo */
+.about-logo {
+    width: 150px;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
-/* Ajuste no texto */
+/* 🔹 Títulos */
+.about-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* 🔹 Linha abaixo do título */
+.about-title::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* 🔹 Parágrafos */
 .about-text {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #444;
     line-height: 1.8;
-    text-align: justify; /* Justifica o texto para melhor leitura */
-    max-width: 1000px; /* Garante que o texto não fique muito estreito */
-    margin: 0 auto 15px;
-}
-
-/* Seção História */
-.history-section {
-    margin-top: 40px;
-    padding: 40px;
-    background: #f8f8f8;
-    border-radius: 10px;
+    max-width: 900px;
+    margin: 0 auto 20px;
     text-align: justify;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Animação da seção de história */
+/* 🔹 Animação de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 🔹 Seção de História */
+.history-section {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 12px;
+    margin-top: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* 🔹 Quando a seção estiver visível */
 .history-section.visible {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Responsividade */
+/* 🔹 Responsividade */
 @media (max-width: 1024px) {
     .about-container {
-        width: 90%;
-        padding: 40px 15px;
-    }
-
-    .about-title {
-        font-size: 2.5rem;
-    }
-
-    .about-text {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .about-container {
         width: 95%;
-        padding: 30px 10px;
+        padding: 60px 15px;
     }
 
     .about-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .about-text {
@@ -76,10 +96,24 @@
     }
 }
 
+@media (max-width: 768px) {
+    .about-container {
+        padding: 40px 10px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+}
+
 @media (max-width: 480px) {
     .about-container {
-        padding: 20px 5px;
-        width: 100%;
+        padding: 30px 5px;
     }
 
     .about-title {
@@ -88,5 +122,9 @@
 
     .about-text {
         font-size: 1rem;
+    }
+
+    .about-logo {
+        width: 120px;
     }
 }

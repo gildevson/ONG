@@ -2,13 +2,20 @@ import React from "react";
 import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
 
-// Importando a imagem única
+// Importando imagem principal
 import image1 from "../../assets/image1.jpg";
 
-// Ícone para os cards
+// Importando imagens dos apoiadores (garanta que são diferentes!)
+import supporter1 from "../../assets/image1.jpg";
+import supporter2 from "../../assets/image1.jpg";
+import supporter3 from "../../assets/image1.jpg";
+import supporter4 from "../../assets/image1.jpg";
+import supporter5 from "../../assets/image1.jpg";
+
+// Ícones para os cards principais
 import { FaHandsHelping, FaBookOpen, FaUsers, FaHeart } from "react-icons/fa";
 
-// Dados dinâmicos para os cards
+// Dados dinâmicos para os cards principais
 const cards = [
   {
     id: 1,
@@ -34,6 +41,15 @@ const cards = [
     title: "JUNTE-SE A NÓS",
     text: "Seja um voluntário ou faça uma doação! Pequenas ações transformam vidas e constroem um futuro melhor.",
   },
+];
+
+// Dados dinâmicos para os apoiadores
+const supporters = [
+  { id: 1, name: "Certificada", logo: supporter1 },
+  { id: 2, name: "Selo ODS", logo: supporter2 },
+  { id: 3, name: "Prêmio Impulso", logo: supporter3 },
+  { id: 4, name: "Prêmio Comunicação", logo: supporter4 },
+  { id: 5, name: "BNI Member", logo: supporter5 },
 ];
 
 const Home = () => {
@@ -72,6 +88,20 @@ const Home = () => {
             </div>
           ))}
         </div>
+
+        {/* 🔹 Seção de Apoiadores */}
+        <div className="instituto-supporters">
+          <h2 className="supporters-title">Nossos Apoiadores</h2>
+          <div className="supporters-cards">
+            {supporters.map((supporter) => (
+              <div key={supporter.id} className="supporter-card">
+                <img src={supporter.logo} alt={supporter.name} className="supporter-logo" />
+                <p className="supporter-name">{supporter.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
