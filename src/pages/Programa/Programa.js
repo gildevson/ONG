@@ -71,12 +71,11 @@ const HolidayNews = () => {
 
   return (
     <div className="news-container">
-      <h1 className="blog-title">BLOG</h1>
+      <h1 className="blog-title">Ações realizadas
+      </h1>
       <div className="news-filters">
-        <input type="text" placeholder="PESQUISAR..." className="search-input" />
-        <select className="category-select">
-          <option>Selecionar Categoria</option>
-        </select>
+        
+       
       </div>
       <div className="news-grid">
         {newsList.map((news, index) => (
