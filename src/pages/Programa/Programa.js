@@ -12,10 +12,6 @@ import natalOne from "../images/natal02.jpeg";
 import natalSeg from "../images/natal03.jpeg";
 import natalTerc from "../images/natal04.jpeg";
 
-
-
-
-
 const News = ({ title, date, content, category, images }) => {
   const settings = {
     dots: true,
@@ -23,13 +19,16 @@ const News = ({ title, date, content, category, images }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
   };
 
   return (
     <div className="news-card">
       <Slider {...settings} className="news-carousel">
         {images.map((img, index) => (
-          <div key={index}>
+          <div key={index} className="carousel-slide">
             <img src={img} alt={`${title} ${index}`} className="news-image" />
           </div>
         ))}
@@ -58,9 +57,8 @@ const HolidayNews = () => {
       date: "25 de dezembro de 2024",
       content: "O Natal chegou! Um momento especial para compartilhar felicidade e espalhar o espírito natalino. Desejamos a todos um Natal cheio de amor e paz!",
       category: "Artigo",
-      images: [natal,natalOne,natalSeg,natalTerc]
+      images: [natal, natalOne, natalSeg, natalTerc]
     },
-
     {
       title: "Dia das Crianças Chegando!",
       date: "12 de outubro de 2024",
@@ -76,7 +74,7 @@ const HolidayNews = () => {
 
   return (
     <div className="news-container">
-      <h1 className="blog-title">Ações realizadas</h1>
+      <h1 className="blog-title">Ações Realizadas</h1>
       <div className="news-grid">
         {newsList.map((news, index) => (
           <News key={index} {...news} />
@@ -85,6 +83,5 @@ const HolidayNews = () => {
     </div>
   );
 };
-
 
 export default HolidayNews;

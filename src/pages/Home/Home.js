@@ -10,6 +10,8 @@ import image1 from "../../assets/image1.jpg";
 // Importando imagens dos apoiadores
 import supporter1 from "../../assets/apoiador1.png";
 import supporter2 from "../../assets/apoiador2.jpeg";
+import supporter3 from "../../assets/apoiador3.png";
+import supporter4 from "../../assets/apoiador4.png";
 
 // Ícones para os cards principais
 import { FaHandsHelping, FaBookOpen, FaUsers, FaHeart } from "react-icons/fa";
@@ -46,6 +48,8 @@ const cards = [
 const supporters = [
   { id: 1, name: "Henrique Imóvel Legal", logo: supporter1 },
   { id: 2, name: "CECOVI", logo: supporter2 },
+  { id: 3, name: "boi", logo: supporter3 },
+  { id: 4, name: "boi", logo: supporter4 }
 ];
 
 const Home = () => {
@@ -63,7 +67,7 @@ const Home = () => {
   return (
     <div className="home-wrapper">
       {/* Exibe a tela de carregamento enquanto o estado estiver ativo */}
-      {loading && <Loading />} 
+      {loading && <Loading />}
 
       <div className="instituto-section">
         {/* 🔹 Seção de Texto */}

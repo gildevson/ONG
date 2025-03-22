@@ -442,3 +442,49 @@ body {
       width: 100%;
   }
 }
+
+.supporters-section {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.supporters-highlight {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.supporters-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
+.supporter-card {
+  flex: 0 0 auto;
+  width: 140px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.supporter-logo {
+  width: 100%;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.supporter-name {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
