@@ -13,6 +13,13 @@ import supporter2 from "../../assets/apoiador2.jpeg";
 import supporter3 from "../../assets/apoiador3.png";
 import supporter4 from "../../assets/apoiador4.png";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/autoplay";
+import { Autoplay } from "swiper/modules";
+
+
+
 // Ícones para os cards principais
 import { FaHandsHelping, FaBookOpen, FaUsers, FaHeart } from "react-icons/fa";
 
@@ -48,8 +55,8 @@ const cards = [
 const supporters = [
   { id: 1, name: "Henrique Imóvel Legal", logo: supporter1 },
   { id: 2, name: "CECOVI", logo: supporter2 },
-  { id: 3, name: "boi", logo: supporter3 },
-  { id: 4, name: "boi", logo: supporter4 }
+  { id: 3, name: "Laggus", logo: supporter3 },
+  { id: 4, name: "Aroma da carne", logo: supporter4 }
 ];
 
 const Home = () => {
@@ -102,6 +109,10 @@ const Home = () => {
           ))}
         </div>
 
+        {/* 🔸 Swiper para mobile (carrossel dos apoiadores) */}
+       
+
+
         {/* 🔹 Seção de Apoiadores */}
         <div className="instituto-supporters">
           {/* 🔹 Card informativo antes dos apoiadores */}
@@ -118,6 +129,32 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+        <div className="supporters-carousel">
+          <Swiper
+            modules={[Autoplay]}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            loop={true}
+            spaceBetween={20}
+            slidesPerView={1}
+            breakpoints={{
+              480: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+            }}
+          >
+            {supporters.map((supporter) => (
+              <SwiperSlide key={supporter.id}>
+                <div className="supporter-card">
+                  <img
+                    src={supporter.logo}
+                    alt={supporter.name}
+                    className="supporter-logo"
+                  />
+                  <p className="supporter-name">{supporter.name}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>
