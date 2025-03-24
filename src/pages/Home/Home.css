@@ -328,7 +328,7 @@ body {
 /* Seção de Apoiadores */
 .instituto-supporters {
   text-align: center;
-  margin: 50px auto;
+  margin: 5px auto 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -397,7 +397,7 @@ body {
 }
 
 .supporter-card:hover {
-  transform: translateY(-5px);
+  
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -517,6 +517,7 @@ body {
 /* Esconde o Swiper no desktop */
 .supporters-carousel {
   display: none;
+  
 }
 
 @media (max-width: 768px) {
@@ -527,7 +528,7 @@ body {
   .supporters-carousel {
     display: block;
     width: 100%;
-    padding: 20px 0;
+    padding: 1px 0;
   }
 
   .swiper-slide {
