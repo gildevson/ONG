@@ -73,7 +73,7 @@ const HolidayNews = () => {
 
   return (
     <div className="news-container">
-      <h1 className="blog-title">Ações Realizadas</h1>
+      <h1 className="blog-title">Notícias</h1>
       <div className="news-grid">
         {newsList.map((news, index) => (
           <News key={index} {...news} />
