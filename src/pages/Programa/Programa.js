@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Programa.css";
-import pascoa from "../images/pascoa.jpeg";
 import pascoa01 from "../images/pascoa01.jpeg";
 import pascoa02 from "../images/pascoa02.jpeg";
 import pascoa04 from "../images/pascoa04.jpeg";
@@ -53,7 +52,7 @@ const HolidayNews = () => {
       date: "31 de março de 2024",
       content: "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
       category: "Notícias",
-      images: [pascoa04, pascoa, pascoa01, pascoa02]
+      images: [pascoa04, pascoa01, pascoa02]
     },
     {
       title: "Feliz Natal!",
@@ -74,6 +73,9 @@ const HolidayNews = () => {
   return (
     <div className="news-container">
       <h1 className="blog-title">Notícias</h1>
+      <p className="news-intro">
+  Nesta seção especial, celebramos datas marcantes como a <strong>Páscoa</strong>, o <strong>Natal</strong> e o <strong>Dia das Crianças</strong> — momentos únicos que fortalecem os laços de amor, união e alegria entre famílias e comunidade. Acompanhe nossas comemorações, confira as fotos dos eventos e fique por dentro de tudo que preparamos com carinho para essas ocasiões tão especiais!
+</p>
       <div className="news-grid">
         {newsList.map((news, index) => (
           <News key={index} {...news} />
