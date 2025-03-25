@@ -48,22 +48,22 @@ const News = ({ title, date, content, category, images }) => {
 const HolidayNews = () => {
   const newsList = [
     {
-      title: "Celebração da Páscoa!",
-      date: "31 de março de 2024",
+      title: "Pascoa Missionária",
+      date: "31 de março",
       content: "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
       category: "Notícias",
       images: [pascoa04, pascoa01, pascoa02]
     },
     {
-      title: "Feliz Natal!",
-      date: "25 de dezembro de 2024",
+      title: "Natal Solidário!",
+      date: "25 de dezembro",
       content: "O Natal chegou! Um momento especial para compartilhar felicidade e espalhar o espírito natalino. Desejamos a todos um Natal cheio de amor e paz!",
       category: "Artigo",
       images: [natal, natalOne, natalSeg, natalTerc]
     },
     {
-      title: "Dia das Crianças Chegando!",
-      date: "12 de outubro de 2024",
+      title: "Dia das Crianças",
+      date: "12 de outubro",
       content: "Dia de celebrar a alegria e a inocência das crianças! Diversas atividades especiais acontecerão para garantir a diversão dos pequenos!",
       category: "Notícias",
       images: [ crianca, crianca02, crianca03]
