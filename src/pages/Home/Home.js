@@ -9,7 +9,7 @@ import image1 from "../../assets/image1.jpg";
 
 // Importando imagens dos apoiadores
 import supporter1 from "../../assets/apoiador1.png";
-import supporter2 from "../../assets/apoiador2.jpeg";
+import supporter2 from "../../assets/apoiador2.jpg";
 import supporter3 from "../../assets/apoiador3.png";
 import supporter4 from "../../assets/apoiador4.png";
 
