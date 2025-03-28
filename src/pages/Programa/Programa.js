@@ -70,7 +70,7 @@ const HolidayNews = () => {
   const newsList = [
     {
       title: "Passeio na Arena da Baixada",
-      date: "31 de março de 2024",
+      date: "19 de Dezembro",
       content:
         "95% das nossas crianças nunca tinham ido a um estádio. Como estamos inseridos nesse ambiente, sabemos que é fora da realidade de muitos — mas também o sonho de quase todos. Levamos cerca de 100 crianças para conhecer a famosa Ligga Arena, um dos estádios mais modernos do país. Foi um dia inesquecível!",
       category: "Eventos",
@@ -78,15 +78,15 @@ const HolidayNews = () => {
     },
     {
       title: "Celebração da Páscoa!",
-      date: "31 de março de 2024",
+      date: "31 de março",
       content:
         "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
       category: "Eventos",
       images: [pascoa04, pascoa01],
     },
     {
-      title: "Feliz Natal!",
-      date: "25 de dezembro de 2024",
+      title: "Natal Solidário!",
+      date: "25 de dezembro",
       content:
         "Todo Natal, fazemos uma campanha chamada 'Adote uma cartinha'. As crianças da comunidade escrevem o que gostariam de ganhar, e os padrinhos realizam esses sonhos. No último Natal, quase 300 crianças foram presenteadas!",
       category: "Eventos",
@@ -94,9 +94,9 @@ const HolidayNews = () => {
     },
     {
       title: "Dia das Crianças",
-      date: "12 de outubro de 2024",
+      date: "12 de outubro",
       content:
-        "Dia de celebrar a alegria e a inocência das crianças! Diversas atividades especiais aconteceram para garantir a diversão dos pequenos!",
+        "Todo o dia das crianças, buscamos realizar uma baita festa para as crianças da nossa comunidade, com direito a brinquedos inflavéis, comida a vontade, brincadeiras, brindes e muito mais.Muitas crianças passam o ano ansiosas por nossa festa, e para muitas é o melhor dia de suas vidas como elas mesmos nos relatam, pois é um dia em que elas podem brincar e não só lembrar que são crianças, mas serem tratadas como tal, com muito amor, atenção e carinho. Em nossa ultima festa, atendemos cerca de 600 crianças e a previsão para a festa de 2025, é atender cerca de 1000 crianças.",
       category: "Notícias",
       images: [crianca, crianca02, crianca03, crianca06, crianca07, crianca08],
       
