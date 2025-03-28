@@ -9,6 +9,10 @@ import natal from "../images/natal.jpeg";
 import natalOne from "../images/natal02.jpeg";
 import natalSeg from "../images/natal03.jpeg";
 import natalTerc from "../images/natal04.jpeg";
+import natal05 from "../images/natal05.jpeg";
+import natal06 from "../images/natal06.jpeg";
+import natal07 from "../images/natal07.jpeg";
+import natal08 from "../images/natal08.jpeg";
 import crianca from "../images/crianca.jpeg";
 import crianca02 from "../images/crianca02.jpeg";
 import crianca03 from "../images/crianca03.jpeg";
@@ -18,8 +22,7 @@ import crianca08 from "../images/crianca08.jpeg";
 import arena02 from "../images/arena02.jpeg";
 import arena04 from "../images/arena04.jpeg";
 import arena05 from "../images/arena05.jpeg";
-import batalha from "../images/batalha.jpeg";
-import batalha02 from "../images/batalha.jpeg";
+
 
 const News = ({ title, date, content, category, images, videoUrl }) => {
   const settings = {
@@ -84,7 +87,7 @@ const HolidayNews = () => {
       content:
         "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
       category: "Eventos",
-      images: [pascoa04, pascoa01],
+      images: [pascoa04, pascoa01,crianca],
     },
     {
       title: "Natal Solidário!",
@@ -92,7 +95,7 @@ const HolidayNews = () => {
       content:
         "Todo Natal, fazemos uma campanha chamada 'Adote uma cartinha'. As crianças da comunidade escrevem o que gostariam de ganhar, e os padrinhos realizam esses sonhos. No último Natal, quase 300 crianças foram presenteadas!",
       category: "Eventos",
-      images: [natal, natalOne, natalSeg, natalTerc],
+      images: [natal, natalOne, natalSeg, natalTerc,natal05,natal06,natal07,natal08],
     },
     {
       title: "Dia das Crianças",
@@ -100,7 +103,7 @@ const HolidayNews = () => {
       content:
         "Todo o dia das crianças, buscamos realizar uma baita festa para as crianças da nossa comunidade, com direito a brinquedos inflavéis, comida a vontade, brincadeiras, brindes e muito mais.Muitas crianças passam o ano ansiosas por nossa festa, e para muitas é o melhor dia de suas vidas como elas mesmos nos relatam, pois é um dia em que elas podem brincar e não só lembrar que são crianças, mas serem tratadas como tal, com muito amor, atenção e carinho. Em nossa ultima festa, atendemos cerca de 600 crianças e a previsão para a festa de 2025, é atender cerca de 1000 crianças.",
       category: "Notícias",
-      images: [crianca, crianca02, crianca03, crianca06, crianca07, crianca08],
+      images: [crianca02, crianca03, crianca06, crianca07, crianca08],
       
     },
   ];

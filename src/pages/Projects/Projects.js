@@ -8,7 +8,6 @@ import "./Projects.css";
 
 // Importando imagens locais (Se estiver usando src/)
 import alimentacaoSolidaria from "../images/alimentacaoSolidaria.jpg";
-import batalhaRap from "../images/alimentacaoSolidaria.jpg";
 import image2 from "../images/image2.jpg";
 import image3 from "../images/image3.jpg";
 import image4 from "../images/image4.jpg";
@@ -19,7 +18,10 @@ import encontro from "../images/encontro.jpeg";
 import encontro02 from "../images/encontro02.jpeg";
 import encontro03 from "../images/encontro04.jpeg";
 import batalha from "../images/batalha.jpeg";
-import batalha02 from "../images/batalha.jpeg";
+import batalha02 from "../images/batalha02.jpeg";
+import batalha04 from "../images/batalha04.jpeg";
+import batalha05 from "../images/batalha05.jpeg";
+
 
 
 
@@ -28,14 +30,6 @@ import batalha02 from "../images/batalha.jpeg";
 const projectList = [
   {
     id: 1,
-    title: "BATALHA DO HOLANDES",
-    description:
-      "Assim como no futebol, o intuito da nossa batalha de rima é se aproximar da juventude local só que dessa vez, através do hip-hop. Mas não só isso, nós também procuramos, através da batalha trazer e mostrar uma outra perspectiva para as crianças da região, pois, muitos ainda enxergam apenas o futebol como opção e esquecem às tantas outras possibilidades em seus caminhos. As batalhas sempre são incríveis, com diversos assuntos sendo colocados em pauta e debatidos em forma de rap, como por exemplo classes sociais, igualdade, política, racismo e muitos outros temas que surgem conforme a batalha acontece.",
-    images: [batalha, batalha02],
-    
-  },
-  {
-    id: 2,
     title: "ENCONTRO INFLUENCIE",
     description:
       "ENCONTRO INFLUENCIE - Todo primeiro sábado do mês, realizamos o ENCONTRO INFLUENCIE na praça do CISA BETONEX, a mais movimentada do bairro, nesses encontros que promovemos nas praças, sempre temos surpresas. Já descobrimos abuso sexual, depressão profunda e até intenções suicidas. Essa atividade sempre atrai dezenas de vidas, que sempre estão ali conosco lutando para se tornar pessoas melhores e vencer as crises e dificuldades que a vida lhes traz. Nesses encontros, sempre buscamos lembrá-los de suas capacidades e principalmente, que eles não estão sozinhos, que podem sim, independente das barreiras vencer na vida e iniciar uma história cheia de conquistas e realizações.",
@@ -43,13 +37,23 @@ const projectList = [
     
   },
   {
-    id: 3,
+    id: 2,
     title: "JARDIM HOLANDES FC",
     description:
       "JARDIM HOLANDÊS FC - O Jardim holandês fc, é um projeto que, utiliza o esporte, mais especificamente o futebol para atrair as crianças para o nosso espaço e assim, identificar de forma mais detalhada e profunda como ajudá-las. Basicamente usamos o futebol como isca pois por exemplo, antes do futebol tem a nossa famosa RODA DE CONVERSA, um momento em que ficamos 30 minutos falando sobre algum tema que é levantado por eles mesmo ali no momento como ANSIEDADE, DEPRESSÃO, MEDO, FUTURO, VALORES e por aí vai, sempre são momentos muito interessantes onde eles interagem entre si e automaticamente se ajudam. Além disso, após o final das atividades, também cedemos o lanche para todas as crianças que participaram conosco das atividades, sendo esse um dos momentos mais importantes pra muitos, já que muitos se encontram em situação de vulnerabilidade social.",
     images: [image3, alimentacaoSolidaria,image2,image4,image5, image06,image07],
     
-  }
+  },
+  {
+    id: 3,
+    title: "BATALHA DO HOLANDES",
+    description:
+      "Assim como no futebol, o intuito da nossa batalha de rima é se aproximar da juventude local só que dessa vez, através do hip-hop. Mas não só isso, nós também procuramos, através da batalha trazer e mostrar uma outra perspectiva para as crianças da região, pois, muitos ainda enxergam apenas o futebol como opção e esquecem às tantas outras possibilidades em seus caminhos. As batalhas sempre são incríveis, com diversos assuntos sendo colocados em pauta e debatidos em forma de rap, como por exemplo classes sociais, igualdade, política, racismo e muitos outros temas que surgem conforme a batalha acontece.",
+    images: [batalha, batalha02,batalha04,batalha05],
+    
+  },
+  
+ 
   
 ];
 
