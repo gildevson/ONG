@@ -91,11 +91,36 @@ const Home = () => {
           <button onClick={handleNavigation} className="instituto-button">
             Saiba Mais <FaArrowRight />
           </button>
+
         </div>
+
+
 
         {/* 🔹 Imagem posicionada corretamente */}
         <div className="imagem-container">
           <img src={image1} alt="Instituto Influenciando Gerações" className="instituto-image" />
+        </div>
+        <div className="impacto-section">
+          <div className="impacto-video">
+            <iframe
+              width="100%"
+              height="315"
+              src="https://www.youtube.com/embed/A8sj6vfGCMw"
+              title="Instituto Influenciando Gerações"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{ borderRadius: "8px" }}
+            ></iframe>
+          </div>
+          <div className="impacto-texto">
+            <h3>Veja o impacto do nosso trabalho!</h3>
+            <p>
+              Nosso compromisso vai além das palavras — veja com seus próprios olhos como transformamos vidas.
+              Assista ao vídeo e conheça mais de perto as ações do Instituto e a alegria das crianças e jovens
+              que fazem parte dessa jornada.
+            </p>
+          </div>
         </div>
 
         {/* 🔹 Seção de Cards */}
@@ -110,7 +135,7 @@ const Home = () => {
         </div>
 
         {/* 🔸 Swiper para mobile (carrossel dos apoiadores) */}
-       
+
 
 
         {/* 🔹 Seção de Apoiadores */}

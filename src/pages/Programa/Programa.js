@@ -19,7 +19,7 @@ import arena02 from "../images/arena02.jpeg";
 import arena04 from "../images/arena04.jpeg";
 import arena05 from "../images/arena05.jpeg";
 
-const News = ({ title, date, content, category, images }) => {
+const News = ({ title, date, content, category, images, videoUrl }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -33,13 +33,28 @@ const News = ({ title, date, content, category, images }) => {
 
   return (
     <div className="news-card">
-      <Slider {...settings} className="news-carousel">
-        {images.map((img, index) => (
-          <div key={index} className="carousel-slide">
-            <img src={img} alt={`${title} ${index}`} className="news-image" />
-          </div>
-        ))}
-      </Slider>
+      {videoUrl ? (
+        <div className="video-container">
+          <iframe
+            width="100%"
+            height="315"
+            src={videoUrl}
+            title={title}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      ) : (
+        <Slider {...settings} className="news-carousel">
+          {images.map((img, index) => (
+            <div key={index} className="carousel-slide">
+              <img src={img} alt={`${title} ${index}`} className="news-image" />
+            </div>
+          ))}
+        </Slider>
+      )}
+
       <div className="news-info">
         <span className={`news-category ${category.toLowerCase()}`}>{category}</span>
         <h2 className="news-title">{title}</h2>
@@ -49,6 +64,7 @@ const News = ({ title, date, content, category, images }) => {
     </div>
   );
 };
+
 
 const HolidayNews = () => {
   const newsList = [
@@ -83,6 +99,7 @@ const HolidayNews = () => {
         "Dia de celebrar a alegria e a inocência das crianças! Diversas atividades especiais aconteceram para garantir a diversão dos pequenos!",
       category: "Notícias",
       images: [crianca, crianca02, crianca03, crianca06, crianca07, crianca08],
+      
     },
   ];
 
