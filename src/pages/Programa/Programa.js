@@ -74,11 +74,11 @@ const News = ({ title, date, content, category, images, videoUrl }) => {
 const HolidayNews = () => {
   const newsList = [
     {
-      title: "Vídeo Especial da Comunidade",
-      date: "15 de Março",
+      title: "Taça das Favelas",
+      date: "",
       content:
-        "Assista ao vídeo emocionante que mostra um pouco do impacto das nossas ações sociais e o sorriso das nossas crianças. É gratificante ver como cada evento transforma vidas!",
-      category: "Vídeo",
+        "Matheus Saimon segue tocando com dedicação um projeto social inspirador em Piraquara, levando esperança, inclusão e transformação através do esporte. O trabalho ganhou ainda mais destaque durante os emocionantes finais da Taça das Favelas, um evento marcado por muito talento, garra e união da comunidade.A ocasião contou com a ilustre participação do presidente da CUFA (Central Única das Favelas), José Campos Jardim, que trouxe uma mensagem poderosa e inspiradora. Com sua frase marcante — 'Favela é potência e não carência' —, ele reforçou a força e o valor das comunidades que, mesmo diante das dificuldades, continuam sendo berços de grandes talentos e sonhos possíveis. O projeto de Matheus não só forma atletas, mas também cidadãos conscientes e preparados para o futuro. É um verdadeiro exemplo de como iniciativas sociais podem transformar vidas e fortalecer comunidades.", 
+        category: "Vídeo",
       videoUrl: "https://www.youtube.com/embed/Qj22G2jyZ0Y?si=lA_aUr05JLyqy6Q_",
       images: [], // pode deixar vazio se tiver só o vídeo
     },
