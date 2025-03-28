@@ -90,7 +90,7 @@ const HolidayNews = () => {
     <div className="news-container">
       <h1 className="blog-title">Nossas Ações</h1>
       <p className="news-intro">
-        Nesta seção especial, celebramos datas marcantes como a <strong>Páscoa</strong>, o <strong>Natal</strong> e o <strong>Dia das Crianças</strong> — momentos únicos que fortalecem os laços de amor, união e alegria entre famílias e comunidade. Acompanhe nossas comemorações, confira as fotos dos eventos e fique por dentro de tudo que preparamos com carinho para essas ocasiões tão especiais!
+        Nesta seção especial, celebramos datas marcantes como a <strong>Páscoa</strong>, o <strong>Natal</strong> e o <strong>Dia das Crianças</strong> — e momentos únicos que fortalecem os laços de amor, união e alegria entre famílias e comunidade. Acompanhe nossas comemorações, confira as fotos dos eventos e fique por dentro de tudo que preparamos com carinho para essas ocasiões tão especiais!
       </p>
       <div className="news-grid">
         {newsList.map((news, index) => (
