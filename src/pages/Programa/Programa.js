@@ -65,7 +65,7 @@ const HolidayNews = () => {
       date: "31 de março de 2024",
       content:
         "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
-      category: "Notícias",
+      category: "Eventos",
       images: [pascoa04, pascoa01],
     },
     {
@@ -73,7 +73,7 @@ const HolidayNews = () => {
       date: "25 de dezembro de 2024",
       content:
         "Todo Natal, fazemos uma campanha chamada 'Adote uma cartinha'. As crianças da comunidade escrevem o que gostariam de ganhar, e os padrinhos realizam esses sonhos. No último Natal, quase 300 crianças foram presenteadas!",
-      category: "Artigo",
+      category: "Eventos",
       images: [natal, natalOne, natalSeg, natalTerc],
     },
     {

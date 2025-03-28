@@ -46,17 +46,7 @@ const Donate = () => {
       </div>
 
       {/* Seção Doação Online */}
-      <div className="donation-option">
-        <h2>Realizar uma doação online</h2>
-        <p>
-          A doação online é uma das formas mais práticas de ajudar. Basta clicar
-          em um dos botões abaixo e doar o valor que quiser agora mesmo!
-        </p>
-        <div className="button-group">
-          <button className="online-donate-button">Doe pelo PayPal</button>
-          <button className="online-donate-button">Doe pelo PicPay</button>
-        </div>
-      </div>
+      
 
       {/* Seção Doação de Roupas */}
       <div className="donation-option">
