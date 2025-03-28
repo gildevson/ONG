@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between; /* 🔥 Garante que o texto fique à esquerda e a imagem à direita */
   flex-wrap: wrap;
-  width: 90%;
+  width: 105%;
   max-width: 1200px;
   position: relative;
   z-index: 2;
@@ -618,20 +618,22 @@ body {
 /* 📱 Ajuste para Mobile */
 @media (max-width: 768px) {
   .impacto-section {
-    flex-direction: column-reverse; /* inverte a ordem no mobile */
-    padding: 1px ;
+    flex-direction: column-reverse;
+    padding: 1rem 1rem;         /* mais simétrico nas laterais */
+    margin: 1rem auto;          /* centralizado! */
+    width: 100%;
     max-width: 100%;
-    
+    border-radius: 8px;
   }
 
   .impacto-texto {
-    padding: 1px ;
+    padding: 0;
     text-align: center;
   }
 
   .impacto-video iframe {
+    width: 100%;
     height: 200px;
-    padding: 5px ;
-    
+    border-radius: 8px;
   }
 }

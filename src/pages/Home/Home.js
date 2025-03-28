@@ -122,6 +122,7 @@ const Home = () => {
             </p>
           </div>
         </div>
+        
 
         {/* 🔹 Seção de Cards */}
         <div className="instituto-cards">
@@ -133,6 +134,7 @@ const Home = () => {
             </div>
           ))}
         </div>
+        
 
         {/* 🔸 Swiper para mobile (carrossel dos apoiadores) */}
 
@@ -182,6 +184,7 @@ const Home = () => {
           </Swiper>
         </div>
       </div>
+      
     </div>
   );
 };
