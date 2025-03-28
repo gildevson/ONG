@@ -18,6 +18,8 @@ import crianca08 from "../images/crianca08.jpeg";
 import arena02 from "../images/arena02.jpeg";
 import arena04 from "../images/arena04.jpeg";
 import arena05 from "../images/arena05.jpeg";
+import batalha from "../images/batalha.jpeg";
+import batalha02 from "../images/batalha.jpeg";
 
 const News = ({ title, date, content, category, images, videoUrl }) => {
   const settings = {
