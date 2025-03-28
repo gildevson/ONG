@@ -45,7 +45,7 @@ const Header = () => {
           {/* Lista de Links do Menu */}
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
             <li><button onClick={() => handleNavigation("/")}>Início</button></li>
-            <li><button onClick={() => handleNavigation("/Programa")}>Noticias</button></li>
+            <li><button onClick={() => handleNavigation("/Programa")}>Nossas Açoes</button></li>
             <li><button onClick={() => handleNavigation("/about")}>Sobre</button></li>
             <li><button onClick={() => handleNavigation("/project")}>Projetos</button></li>
             <li><button onClick={() => handleNavigation("/donate")}>Doar</button></li>
