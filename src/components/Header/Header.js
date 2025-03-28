@@ -45,11 +45,7 @@ const Header = () => {
           {/* Lista de Links do Menu */}
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
             <li><button onClick={() => handleNavigation("/")}>Início</button></li>
-<<<<<<< HEAD
-            <li><button onClick={() => handleNavigation("/Programa")}>Nossas Açoes</button></li>
-=======
             <li><button onClick={() => handleNavigation("/Programa")}>Ações Realizadas</button></li>
->>>>>>> d4c76b84eceab34b57a46eeee1f8f6d381516b35
             <li><button onClick={() => handleNavigation("/about")}>Sobre</button></li>
             <li><button onClick={() => handleNavigation("/project")}>Projetos</button></li>
             <li><button onClick={() => handleNavigation("/donate")}>Doar</button></li>
