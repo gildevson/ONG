@@ -74,6 +74,15 @@ const News = ({ title, date, content, category, images, videoUrl }) => {
 const HolidayNews = () => {
   const newsList = [
     {
+      title: "Vídeo Especial da Comunidade",
+      date: "15 de Março",
+      content:
+        "Assista ao vídeo emocionante que mostra um pouco do impacto das nossas ações sociais e o sorriso das nossas crianças. É gratificante ver como cada evento transforma vidas!",
+      category: "Vídeo",
+      videoUrl: "https://www.youtube.com/embed/Qj22G2jyZ0Y?si=lA_aUr05JLyqy6Q_",
+      images: [], // pode deixar vazio se tiver só o vídeo
+    },
+    {
       title: "Passeio na Arena da Baixada",
       date: "19 de Dezembro",
       content:
@@ -106,6 +115,7 @@ const HolidayNews = () => {
       images: [crianca02, crianca03, crianca06, crianca07, crianca08],
       
     },
+    
   ];
 
   return (
