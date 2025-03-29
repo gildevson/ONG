@@ -4,10 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Programa.css";
 import { useNavigate } from "react-router-dom";
-import { FaArrowRight } from "react-icons/fa";
 import Loading from "../../components/Loading";
 
-// imagens
+// imagens 
 import pascoa01 from "../images/pascoa01.jpeg";
 import pascoa04 from "../images/pascoa04.jpeg";
 import natal from "../images/natal.jpeg";
