@@ -193,3 +193,42 @@ body {
   height: 100%;
 }
 
+.call-to-action {
+  background: #fc893d;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 16px;
+  margin-top: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.call-to-action h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.call-to-action p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #fc893d;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #f6f6f6;
+}

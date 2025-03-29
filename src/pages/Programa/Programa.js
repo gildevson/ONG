@@ -116,6 +116,7 @@ const HolidayNews = () => {
       
     },
     
+    
   ];
 
   return (
@@ -124,10 +125,21 @@ const HolidayNews = () => {
       <p className="news-intro">
         Nesta seção especial, celebramos datas marcantes como a <strong>Páscoa</strong>, o <strong>Natal</strong> e o <strong>Dia das Crianças</strong> — e momentos únicos que fortalecem os laços de amor, união e alegria entre famílias e comunidade. Acompanhe nossas comemorações, confira as fotos dos eventos e fique por dentro de tudo que preparamos com carinho para essas ocasiões tão especiais!
       </p>
+
       <div className="news-grid">
         {newsList.map((news, index) => (
           <News key={index} {...news} />
         ))}
+      </div>
+
+      {/* 🔸 Bloco "Junte-se a nós" */}
+      <div className="call-to-action">
+        <h2>Junte-se a nós!</h2>
+        <p>
+          Acreditamos que pequenas ações geram grandes transformações. Você também pode fazer parte dessas histórias de amor, solidariedade e impacto social.
+          Seja voluntário, apadrinhe uma criança, doe ou compartilhe nossas iniciativas. Toda ajuda conta!
+        </p>
+        <button className="cta-button">Quero fazer parte</button>
       </div>
     </div>
   );

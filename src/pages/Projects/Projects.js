@@ -55,7 +55,7 @@ const Projects = () => {
     <div className="projects-container">
       <h1>Nossos Projetos</h1>
       <p className="projects-intro">
-        Conheça as iniciativas que desenvolvemos para promover o bem-estar e o desenvolvimento da nossa comunidade.
+      Conheça as iniciativas que desenvolvemos para promover o bem-estar e o desenvolvimento da nossa comunidade. Nossos projetos são pensados para transformar vidas, fortalecendo vínculos sociais, incentivando a educação e promovendo oportunidades que geram impacto real e duradouro
       </p>
 
       {projectList.map((project) => (
