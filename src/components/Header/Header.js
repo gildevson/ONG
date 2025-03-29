@@ -12,6 +12,7 @@ const Header = () => {
     setLoading(true); // Ativa o efeito de carregamento
     setTimeout(() => {
       navigate(path); // Redireciona para a página clicada
+      window.scrollTo({ top: 0, behavior: "smooth" }); 
       setLoading(false);
       setMenuOpen(false); // Fecha o menu após a navegação
     }, 1000); // Simula carregamento de 1 segundo

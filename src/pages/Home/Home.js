@@ -4,7 +4,7 @@ import "./Home.css";
 import { FaArrowRight } from "react-icons/fa";
 import Loading from "../../components/Loading"; // Caminho correto para importar o Loading
 
-// Importando imagem principal
+// Importando imagem principal 
 import image1 from "../../assets/image1.jpg";
 
 // Importando imagens dos apoiadores
