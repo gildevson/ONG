@@ -12,12 +12,11 @@ body {
 /* 🔹 Wrapper principal */
 .home-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 1% 20px;
-  background: linear-gradient(to bottom right, #fc893d, #fccfb1);
-  position: relative;
+  background: linear-gradient(to bottom right, #fc893d, #f0c8ae); /* fundo laranja degradê */  position: relative;
   overflow: hidden;
 }
 
@@ -28,11 +27,12 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80%;
-  background: linear-gradient(to right, #f6f6f6, #ddd);
-  border-bottom-left-radius: 50% 40%;
-  border-bottom-right-radius: 45% 30%;
+  height: 40%;
+  background: linear-gradient(to right, #ffffff, #f6f6f6); /* branco com leve cinza */
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
   z-index: 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05); /* leve sombra pra destacar a curva */
 }
 
 /* 🔹 Seção principal */
