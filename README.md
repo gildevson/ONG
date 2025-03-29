@@ -1,6 +1,6 @@
 # Instituto Influenciando Gerações 🌱
 
-![Instituto Influenciando Gerações](./public/preview.png)
+![Instituto Influenciando Gerações](./public/modelo.png)
 
 Este site foi desenvolvido para o **Instituto Influenciando Gerações**, uma organização sem fins lucrativos dedicada a **defender e proteger os direitos das crianças e dos jovens de Piraquara**. A ONG promove **oportunidade e inclusão por meio da educação, cultura, esporte** e diversas **iniciativas sociais**.
 
@@ -14,6 +14,7 @@ Este site foi desenvolvido para o **Instituto Influenciando Gerações**, uma or
 - React.js (Create React App)
 - HTML5 + CSS3
 - JavaScript ES6+
+- API REST
 
 ---
 
