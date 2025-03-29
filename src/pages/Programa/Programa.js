@@ -5,8 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Programa.css";
 import { useNavigate } from "react-router-dom";
 import Loading from "../../components/Loading";
-
-// imagens 
 import pascoa01 from "../images/pascoa01.jpeg";
 import pascoa04 from "../images/pascoa04.jpeg";
 import natal from "../images/natal.jpeg";
