@@ -121,50 +121,48 @@ body {
 }
 
 /* Personaliza os dots do carrossel */
+.news-carousel {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  z-index: 0;
+}
+
 .slick-dots {
   position: absolute;
-  bottom: 10px;
-  left:75%;
+  bottom: 10px; /* dentro da imagem */
+  left: 50%;
   transform: translateX(-50%);
   display: flex !important;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
   list-style: none;
   padding: 0;
   margin: 0;
+  z-index: 2;
+  background-color: transparent; /* remove o vermelho */
 }
 
-/* Ajusta o tamanho e a aparência dos dots */
-.slick-dots li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease-in-out;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-/* Remove o botão padrão dentro das bolinhas */
 .slick-dots li button {
   font-size: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* <-- isso garante que fique redondo */
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0;
 }
-
-/* Destaque para o dot ativo */
-.slick-dots .slick-active {
-  background: #cacecb;
-  width: 12px;
-  height: 12px;
-  transform: scale(1.3);
+.slick-dots li.slick-active {
+  background: #e9e1dc;
+  width: 14px;
+  height: 14px;
+  transform: scale(1.2);
+  border-radius: 50%; /* <-- reforça que é uma bolinha */
 }
-
 .news-intro {
   font-size: 1.125rem;
   margin: 1.5rem auto 2rem auto;

@@ -12,6 +12,7 @@ const Footer = () => {
     setLoading(true);
     setTimeout(() => {
       navigate(path);
+      window.scrollTo({ top: 0, behavior: "smooth" }); 
       setLoading(false);
     }, 1500); // 1.5 segundos de carregamento
   };
