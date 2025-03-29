@@ -31,7 +31,6 @@ const Footer = () => {
             <li><button onClick={() => handleRedirect("/about")} className="link-button">Quem Somos</button></li>
             <li><button onClick={() => handleRedirect("/Programa")} className="link-button">Nossa Ações</button></li>
             <li><button onClick={() => handleRedirect("/project")} className="link-button">Projetos</button></li>
-            <li><button onClick={() => handleRedirect("/transparency")} className="link-button">Transparência</button></li>
             <li><button onClick={() => handleRedirect("/donate")} className="link-button">Seja Voluntário</button></li>
           </ul>
         </div>

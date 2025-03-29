@@ -1,130 +1,138 @@
-/* 🔹 Container Principal */
 .about-container {
-    max-width: 1100px;
-    width: 90%;
-    margin: 50px auto;
-    padding: 80px 20px;
-    background: #fff;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* 🔹 Logo */
-.about-logo {
-    width: 150px;
-    margin-bottom: 20px;
-}
-
-/* 🔹 Títulos */
-.about-title {
-    font-size: 2.5rem;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 15px;
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px;
-}
-
-/* 🔹 Linha abaixo do título */
-.about-title::after {
-    content: '';
-    width: 50px;
-    height: 4px;
-    background-color: #007bff;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 2px;
-}
-
-/* 🔹 Parágrafos */
-.about-text {
-    font-size: 1.2rem;
-    color: #444;
-    line-height: 1.8;
-    max-width: 900px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: "Arial", sans-serif;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  .about-logo {
+    display: block;
     margin: 0 auto 20px;
+    width: 160px;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #111;
+  }
+  
+  .about-text {
+    font-size: 1.15rem;
+    line-height: 1.8;
     text-align: justify;
-}
-
-/* 🔹 Animação de Fade In */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 🔹 Seção de História */
-.history-section {
-    background: #f9f9f9;
-    padding: 60px 20px;
-    border-radius: 12px;
-    margin-top: 50px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-/* 🔹 Quando a seção estiver visível */
-.history-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* 🔹 Responsividade */
-@media (max-width: 1024px) {
-    .about-container {
-        width: 95%;
-        padding: 60px 15px;
-    }
-
+    margin-bottom: 25px;
+  }
+  
+  .history-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .image-block {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .image-caption {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
     .about-title {
-        font-size: 2.2rem;
+      font-size: 2rem;
     }
-
+  
     .about-text {
-        font-size: 1.1rem;
+      font-size: 1rem;
     }
-}
+  
+    .about-image {
+      max-width: 90%;
+    }
+  }
+  
 
-@media (max-width: 768px) {
-    .about-container {
-        padding: 40px 10px;
-    }
+  .history-section {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
 
-    .about-title {
-        font-size: 2rem;
-    }
 
-    .about-text {
-        font-size: 1rem;
-        padding: 0 10px;
+  /* Bloco em linha com imagem e texto */
+.highlight-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+  }
+  
+  .highlight-block.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .highlight-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  .highlight-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .highlight-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-caption {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .highlight-block,
+    .highlight-block.reverse {
+      flex-direction: column;
     }
-}
-
-@media (max-width: 480px) {
-    .about-container {
-        padding: 30px 5px;
+  
+    .highlight-text {
+      text-align: center;
     }
-
-    .about-title {
-        font-size: 1.8rem;
-    }
-
-    .about-text {
-        font-size: 1rem;
-    }
-
-    .about-logo {
-        width: 120px;
-    }
-}
+  }
+  

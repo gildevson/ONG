@@ -22,10 +22,6 @@ import batalha02 from "../images/batalha02.jpeg";
 import batalha04 from "../images/batalha04.jpeg";
 import batalha05 from "../images/batalha05.jpeg";
 
-
-
-
-
 // Lista de projetos com imagens corrigidas
 const projectList = [
   {
@@ -51,10 +47,7 @@ const projectList = [
       "Assim como no futebol, o intuito da nossa batalha de rima é se aproximar da juventude local só que dessa vez, através do hip-hop. Mas não só isso, nós também procuramos, através da batalha trazer e mostrar uma outra perspectiva para as crianças da região, pois, muitos ainda enxergam apenas o futebol como opção e esquecem às tantas outras possibilidades em seus caminhos. As batalhas sempre são incríveis, com diversos assuntos sendo colocados em pauta e debatidos em forma de rap, como por exemplo classes sociais, igualdade, política, racismo e muitos outros temas que surgem conforme a batalha acontece.",
     images: [batalha, batalha02,batalha04,batalha05],
     
-  },
-  
- 
-  
+  }, 
 ];
 
 const Projects = () => {
