@@ -379,7 +379,7 @@ body {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 /* Card de cada apoiador */

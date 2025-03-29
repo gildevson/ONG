@@ -12,6 +12,7 @@ import supporter1 from "../../assets/apoiador1.png";
 import supporter2 from "../../assets/apoiador2.jpg";
 import supporter3 from "../../assets/apoiador3.png";
 import supporter4 from "../../assets/apoiador4.png";
+import supporter5 from "../../assets/apoiador5.png";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -56,7 +57,8 @@ const supporters = [
   { id: 1, name: "Henrique Imóvel Legal", logo: supporter1 },
   { id: 2, name: "CECOVI", logo: supporter2 },
   { id: 3, name: "Laggus", logo: supporter3 },
-  { id: 4, name: "Aroma da carne", logo: supporter4 }
+  { id: 4, name: "Aroma da carne", logo: supporter4 },
+  { id: 5, name: "Gama - Equipamentos industriais", logo: supporter5 }
 ];
 
 const Home = () => {

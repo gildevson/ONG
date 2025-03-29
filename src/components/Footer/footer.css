@@ -137,3 +137,20 @@
     gap: 5px;
   }
 }
+
+
+.link-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none; /* remove sublinhado */
+  font: inherit;
+  padding: 0;
+  display: inline;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  color: #ff9900; /* ou a cor laranja do botão "Doe Agora", por exemplo */
+}
