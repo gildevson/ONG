@@ -129,7 +129,7 @@ const HolidayNews = () => {
       title: "Dia das Crianças",
       date: "12 de outubro",
       content: "Todo o dia das crianças, buscamos realizar uma baita festa para as crianças da nossa comunidade, com direito a brinquedos inflavéis, comida a vontade, brincadeiras, brindes e muito mais.Muitas crianças passam o ano ansiosas por nossa festa, e para muitas é o melhor dia de suas vidas como elas mesmos nos relatam, pois é um dia em que elas podem brincar e não só lembrar que são crianças, mas serem tratadas como tal, com muito amor, atenção e carinho. Em nossa ultima festa, atendemos cerca de 600 crianças e a previsão para a festa de 2025, é atender cerca de 1000 crianças.",
-      category: "Notícias",
+      category: "Eventos",
       images: [crianca02, crianca03, crianca06, crianca07, crianca08],
     },
   ];
