@@ -77,8 +77,7 @@ const Footer = () => {
         <ul className="footer-links">
           <li><button onClick={() => handleRedirect("/")} className="link-button">Início</button></li>
           <li><button onClick={() => handleRedirect("/cookies")} className="link-button">Política de Cookies</button></li>
-          <li><button onClick={() => handleRedirect("/help")} className="link-button">Ajuda</button></li>
-          <li><button onClick={() => handleRedirect("/faqs")} className="link-button">Perguntas Frequentes</button></li>
+      
         </ul>
       </div>
     </footer>
