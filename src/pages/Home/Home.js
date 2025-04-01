@@ -30,7 +30,7 @@ const cards = [
     id: 1,
     icon: <FaHandsHelping size={50} />,
     title: "NOSSA MISSÃO",
-    text: "Promover a inclusão e o desenvolvimento de crianças e jovens por meio da educação, cultura e esportes.",
+    text: "Promover a inclusão e o desenvolvimento de crianças e jovens por meio da educação, da cultura e do esporte.",
   },
   {
     id: 2,
