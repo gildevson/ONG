@@ -112,9 +112,9 @@ const HolidayNews = () => {
       images: [arena05, arena02, arena04],
     },
     {
-      title: "Celebração da Páscoa!",
+      title: "Páscoa Missionaria!",
       date: "31 de março",
-      content: "A Páscoa está chegando! Tempo de renovação, esperança e união entre amigos e familiares. Celebre com amor e alegria!",
+      content: "bombons e distribuímos para as crianças da nossa comunidade, e não só isso, nessa data também aproveitamos para lembra-las do verdadeiro significado da Páscoa, que é a ressurreição de Jesus Cristo, a data em que o amor venceu.",
       category: "Eventos",
       images: [pascoa04, pascoa01, crianca],
     },
