@@ -6,7 +6,7 @@ import Programa from "./pages/Programa/Programa";
 import Contact from "./pages/Contact/Contact";
 import Donate from "./pages/Donate/Donate";
 import Projects from "./pages/Projects/Projects";
-import Transparency from "./pages/Transparency/Transparency";
+
 
 const AppRoutes = () => {
   return (
@@ -17,7 +17,7 @@ const AppRoutes = () => {
       <Route path="/Programa" element={<Programa />} />
       <Route path="/donate" element={<Donate />} />
       <Route path="/project" element={<Projects />} />
-      <Route path="/transparency" element={<Transparency />} />
+  
     </Routes>
   );
 };
