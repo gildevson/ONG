@@ -107,7 +107,7 @@ const HolidayNews = () => {
     {
       title: "Passeio na Arena da Baixada",
       date: "19 de Dezembro",
-      content: "5% das nossas crianças nunca tinham ido a um estádio. Como estamos inseridos nesse ambiente, sabemos que é fora da realidade de muitos — mas também o sonho de quase todos. Levamos cerca de 100 crianças para conhecer a famosa Ligga Arena, um dos estádios mais modernos do país. Foi um dia inesquecível!",
+      content: "95% das nossas crianças nunca tinham ido a um estádio. Como estamos inseridos nesse ambiente, sabemos que é fora da realidade de muitos — mas também o sonho de quase todos. Levamos cerca de 100 crianças para conhecer a famosa Ligga Arena, um dos estádios mais modernos do país. Foi um dia inesquecível!",
       category: "Eventos",
       images: [arena05, arena02, arena04],
     },
