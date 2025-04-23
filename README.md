@@ -48,7 +48,7 @@ Se você deseja contribuir com esse projeto e apoiar essa causa, entre em contat
 ## ✨ Contato
 
 - 📧 contato@institutoinfluenciandogeracoes.org
-- 🌐 [Site oficial](https://www.xn--influenciandogeraes-myb80a.com/) (exemplo)
+- 🌐 [Site oficial](https://www.influenciandogerações.com)
 
 ---
 
