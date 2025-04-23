@@ -12,8 +12,7 @@ Este site foi desenvolvido para o **Instituto Influenciando Gerações**, uma or
 ## 🚀 Tecnologias Utilizadas
 
 - React.js (Create React App)
-- HTML5 + CSS3
-- JavaScript ES6+
+- Nodejs
 - API REST
 
 ---
@@ -27,24 +26,16 @@ No diretório do projeto, você pode executar:
 Executa o app em modo de desenvolvimento.\
 Abra [http://localhost:3000](http://localhost:3000) para ver no navegador.
 
-### `npm test`
-
 Inicia o test runner no modo interativo.
 
-### `npm run build`
 
 Cria o build da aplicação para produção.
-
-### `npm run eject`
 
 ⚠️ Copia as configurações internas do CRA para o projeto.
 
 ---
 
 ## 📚 Saiba Mais
-
-- [Documentação do Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
-- [Documentação do React](https://reactjs.org/)
 
 ---
 
@@ -57,7 +48,7 @@ Se você deseja contribuir com esse projeto e apoiar essa causa, entre em contat
 ## ✨ Contato
 
 - 📧 contato@institutoinfluenciandogeracoes.org
-- 🌐 [Site oficial](https://institutoinfluenciandogeracoes.org) (exemplo)
+- 🌐 [Site oficial](https://www.xn--influenciandogeraes-myb80a.com/) (exemplo)
 
 ---
 
