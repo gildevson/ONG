@@ -1,57 +1,75 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Loading from "../Loading"; // Importa o componente de carregamento
-import "./header.css"; // Arquivo CSS do Header
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import Loading from "../Loading";
+import "./header.css";
+
+const navItems = [
+  { label: "Início",           path: "/"         },
+  { label: "Ações Realizadas", path: "/Programa"  },
+  { label: "Sobre",            path: "/about"     },
+  { label: "Projetos",         path: "/project"   },
+  { label: "Doar",             path: "/donate"    },
+  { label: "Contato",          path: "/contact"   },
+];
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const navigate = useNavigate(); // Hook para navegação
+  const [menuOpen, setMenuOpen]   = useState(false);
+  const [loading, setLoading]     = useState(false);
+  const navigate  = useNavigate();
+  const location  = useLocation();
 
   const handleNavigation = (path) => {
-    setLoading(true); // Ativa o efeito de carregamento
+    setMenuOpen(false);
+    if (location.pathname === path) return;
+    setLoading(true);
     setTimeout(() => {
-      navigate(path); // Redireciona para a página clicada
-      window.scrollTo({ top: 0, behavior: "smooth" }); 
+      navigate(path);
+      window.scrollTo({ top: 0, behavior: "smooth" });
       setLoading(false);
-      setMenuOpen(false); // Fecha o menu após a navegação
-    }, 1000); // Simula carregamento de 1 segundo
+    }, 800);
   };
 
   return (
     <>
-      {loading && <Loading />} {/* Mostra a tela de carregamento */}
+      {loading && <Loading />}
 
       <nav className="navbar">
         <div className="container">
-          {/* Logo da ONG */}
+
+          {/* Logo */}
           <Link to="/" className="logo">
-            <img src="/logo.png" alt="Minha ONG" className="logo-img" />
+            <img src="/logo.png" alt="Instituto Influenciando Gerações" className="logo-img" />
           </Link>
 
-          {/* Ícone do Menu Hambúrguer */}
+          {/* Hambúrguer */}
           <div
             className="menu-icon"
-            onClick={(e) => {
-              e.stopPropagation(); 
-              setMenuOpen(!menuOpen);
-            }}
+            onClick={(e) => { e.stopPropagation(); setMenuOpen(!menuOpen); }}
             role="button"
             aria-label="Abrir menu"
             tabIndex={0}
           >
-            {menuOpen ? "✖" : "☰"}
+            {menuOpen ? "✕" : "☰"}
           </div>
 
-          {/* Lista de Links do Menu */}
+          {/* Links */}
           <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-            <li><button onClick={() => handleNavigation("/")}>Início</button></li>
-            <li><button onClick={() => handleNavigation("/Programa")}>Ações Realizadas</button></li>
-            <li><button onClick={() => handleNavigation("/about")}>Sobre</button></li>
-            <li><button onClick={() => handleNavigation("/project")}>Projetos</button></li>
-            <li><button onClick={() => handleNavigation("/donate")}>Doar</button></li>
-            <li><button onClick={() => handleNavigation("/contact")}>Contato</button></li>
+            {navItems.map(({ label, path }) => {
+              const isActive = location.pathname === path;
+              const isDoar   = path === "/donate";
+              return (
+                <li key={path} className={isDoar ? "btn-doar" : ""}>
+                  <button
+                    onClick={() => handleNavigation(path)}
+                    className={isActive ? "active" : ""}
+                  >
+                    {label}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
+
         </div>
       </nav>
     </>

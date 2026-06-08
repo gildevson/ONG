@@ -1,146 +1,251 @@
-/* 🔹 Estilos globais do menu */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #FF7800; /* Laranja vibrante */
-  color: #fff;
-  padding: 1rem 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
-  transition: background 0.3s ease-in-out;
-  display: flex;
-  justify-content: center;
-}
-
-/* 📌 Evita sobreposição no conteúdo abaixo */
+/* ════════════════════════════════════════════
+   NAVBAR
+════════════════════════════════════════════ */
 body {
-  padding-top: 80px; /* Ajuste conforme o tamanho do menu */
+  padding-top: 72px;
   margin: 0;
   overflow-x: hidden;
 }
 
-/* 📌 Container centralizado */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FF7800;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* linha decorativa na base */
+.navbar::after {
+  content: "";
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* ── Container ─────────────────────────────── */
 .container {
-  width: 90%;
+  width: 92%;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 0;
 }
 
-/* 🏷️ Logo */
+/* ── Logo ──────────────────────────────────── */
 .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
   text-decoration: none;
   z-index: 1100;
 }
 
 .logo-img {
-  height: 70px;
-  width: 70px;
+  height: 52px;
+  width: 52px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid white;
-  transition: transform 0.3s ease-in-out;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  transition: transform 0.3s ease;
 }
 
 .logo-img:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
-/* 🏷️ Links do menu */
+/* ── Links desktop ─────────────────────────── */
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  transition: all 0.3s ease-in-out;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
 }
 
-/* 🔹 Botões do menu corrigidos */
+.nav-links li {
+  position: relative;
+}
+
 .nav-links button {
   background: transparent;
   border: none;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background 0.3s ease-in-out, transform 0.2s;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease, background 0.2s ease;
+  position: relative;
+}
+
+/* underline deslizante */
+.nav-links button::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 14px;
+  right: 14px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
 }
 
 .nav-links button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
 }
 
-/* 📌 Ícone do menu hambúrguer */
+.nav-links button:hover::after {
+  transform: scaleX(1);
+}
+
+/* link ativo */
+.nav-links button.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-links button.active::after {
+  transform: scaleX(1);
+}
+
+/* ── Botão "Doar" — CTA destacado ──────────── */
+.nav-links .btn-doar button {
+  background: #fff;
+  color: #e06000;
+  font-weight: 800;
+  padding: 7px 18px;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-links .btn-doar button::after {
+  display: none;
+}
+
+.nav-links .btn-doar button:hover {
+  background: #fff3e0;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* ── Hambúrguer (mobile) ───────────────────── */
 .menu-icon {
   display: none;
-  font-size: 2rem;
+  font-size: 1.7rem;
   cursor: pointer;
   color: #fff;
-  transition: transform 0.3s ease-in-out;
   z-index: 1101;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+  user-select: none;
 }
 
 .menu-icon:hover {
-  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.15);
 }
 
-/* 📌 MENU RESPONSIVO */
+/* ════════════════════════════════════════════
+   RESPONSIVIDADE — 768px
+════════════════════════════════════════════ */
 @media (max-width: 768px) {
+  body {
+    padding-top: 64px;
+  }
+
   .menu-icon {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
-  /* 📌 Mantém a navbar fixa e visível */
   .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem 0;
+    padding: 0;
   }
 
-  /* 📌 Corrigindo altura do menu para evitar espaços extras */
+  .container {
+    padding: 8px 0;
+  }
+
+  .logo-img {
+    height: 46px;
+    width: 46px;
+  }
+
+  /* menu fullscreen */
   .nav-links {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+    inset: 0;
+    background: #1a1a1a;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
-    gap: 1.5rem;
-    
-    transform: translateY(-100%);
+    gap: 8px;
+    transform: translateX(100%);
     opacity: 0;
     visibility: hidden;
-    transition: transform 0.4s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transition: transform 0.35s ease, opacity 0.3s ease, visibility 0.3s ease;
   }
 
-  /* 📌 Quando o menu estiver aberto */
   .nav-links.open {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     visibility: visible;
   }
 
   .nav-links button {
-    font-size: 22px;
-    padding: 15px 20px;
+    font-size: 1.2rem;
+    padding: 12px 32px;
+    color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .nav-links button:hover,
+  .nav-links button.active {
+    background: rgba(255, 120, 0, 0.2);
+    color: #ff9a40;
+  }
+
+  .nav-links button::after {
+    display: none;
+  }
+
+  /* Doar no mobile */
+  .nav-links .btn-doar {
+    margin-top: 8px;
+  }
+
+  .nav-links .btn-doar button {
+    background: #ff7800;
+    color: #fff;
+    border-radius: 12px;
+    padding: 12px 40px;
+    font-size: 1.1rem;
+    box-shadow: none;
+  }
+
+  .nav-links .btn-doar button:hover {
+    background: #e06500;
+    transform: none;
   }
 }
 
-/* 📌 Ajuste extra para remover margens desnecessárias */
 main {
   margin: 0;
-  padding: 0 1rem;
-  max-width: 1200px;
+  padding: 0;
 }
