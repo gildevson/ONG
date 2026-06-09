@@ -8,6 +8,39 @@
   margin-top: auto; /* 🔹 Mantém o Footer na parte inferior corretamente */
 }
 
+/* Brand / Logo no footer */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FF7800;
+  box-shadow: 0 0 0 6px rgba(255, 120, 0, 0.15), 0 0 24px rgba(255, 120, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 0 8px rgba(255, 120, 0, 0.2), 0 0 36px rgba(255, 120, 0, 0.55);
+}
+
+.footer-tagline {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.6px;
+  font-style: italic;
+}
+
 /* 🔹 Container flexível para se ajustar corretamente */
 .footer-container {
   display: flex;

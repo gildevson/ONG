@@ -23,6 +23,17 @@ const Footer = () => {
 
   return (
     <footer className="footer">
+
+      {/* Brand */}
+      <div className="footer-brand">
+        <img
+          src="/LogoInfluenciando.png"
+          alt="Instituto Influenciando Gerações"
+          className="footer-logo"
+        />
+        <p className="footer-tagline">Transformando vidas, construindo futuros</p>
+      </div>
+
       <div className="footer-container">
 
         {/* Sobre a ONG */}
