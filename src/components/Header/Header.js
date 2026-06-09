@@ -38,7 +38,7 @@ const Header = () => {
 
           {/* Logo */}
           <Link to="/" className="logo">
-            <img src="/logo.png" alt="Instituto Influenciando Gerações" className="logo-img" />
+            <img src="/LogoInfluenciando.png" alt="Instituto Influenciando Gerações" className="logo-img" />
           </Link>
 
           {/* Hambúrguer */}
